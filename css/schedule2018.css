@@ -1,0 +1,31 @@
+main {
+  margin-bottom: 180px;
+}
+
+main.day1-active li {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+main.day1-active h1 {
+  height: auto;
+  font-weight: 300 !important;
+  margin-bottom: 30px;
+  border: 0;
+}
+
+main.day1-active h1:before, main.day1-active h1:after {
+  display: none;
+}
+
+main.day1-active h1 span {
+  width: 180px;
+  height: 46px;
+  box-sizing: border-box;
+  border: 0;
+}
+
+main.day1-active h1 span:after {
+  display: none;
+}

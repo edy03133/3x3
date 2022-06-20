@@ -1,0 +1,140 @@
+main {
+  margin-bottom: 180px;
+}
+
+.season-format .contents p {
+  margin: 0 180px 0 180px;
+  margin-bottom: 25px;
+  width: 660px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2D2D2D;
+}
+
+.season-format .contents img {
+  margin: 0;
+}
+
+.season-format .season-intro {
+  margin-bottom: 118px;
+}
+
+.season-format .season-intro img {
+  margin: 60px 0;
+}
+
+.season-format .regular-round {
+  margin-bottom: 94px;
+}
+
+.season-format h2 {
+  width: 100%;
+  height: 138px;
+  bottom: -2px;
+  margin-top: 0;
+  margin-bottom: 55px;
+  border-bottom: 2px solid #F5F5F5;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.season-format h2 span {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 138px;
+  justify-content: center;
+  align-items: center;
+}
+
+.season-format h2 span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: calc((100% / 2) - 160px);
+  width: 320px;
+  height: 2px;
+  background-color: #E5002D;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin-bottom: 80px;
+  }
+  .season-format h1 span {
+    padding-top: 14px;
+    padding-bottom: 0px;
+    line-height: 25px;
+  }
+  .season-format .contents p {
+    margin: 0;
+    margin-bottom: 25px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .season-format .contents img {
+    width: 335px;
+    margin-bottom: 30px;
+  }
+  .season-format .season-intro {
+    margin: 0 0 62px 0;
+  }
+  .season-format .season-intro img {
+    margin: 0 auto 40px;
+    width: 330px;
+  }
+  .season-format .regular-round {
+    margin-bottom: 67px;
+  }
+  .season-format .regular-round img:nth-of-type(2) {
+    margin-bottom: 40px;
+  }
+  .season-format .regular-round img:nth-of-type(3) {
+    margin-bottom: 60px;
+  }
+  .season-format .regular-round img:nth-of-type(4) {
+    margin-bottom: 35px;
+  }
+  .season-format h2 {
+    width: 100%;
+    height: 48px;
+    bottom: -2px;
+    margin-top: 0;
+    margin-bottom: 36px;
+    border-bottom: 2px solid #F5F5F5;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.56px;
+    color: #000000;
+    font-weight: bold;
+  }
+  .season-format h2 span {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+  }
+  .season-format h2 span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: calc((100% / 2) - 100px);
+    width: 200px;
+    height: 2px;
+    background-color: #E5002D;
+  }
+  .inter-conference img.sp {
+    margin-bottom: 60px;
+  }
+  .pay-off img.sp {
+    margin-bottom: 40px;
+  }
+}

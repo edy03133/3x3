@@ -1,0 +1,540 @@
+.acf-map {
+    width: 1020px;
+    height: 500px;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+    max-width: inherit !important;
+}
+
+@media screen and (max-width: 750px) {
+    .acf-map {
+        width: 375px;
+        height: 250px;
+        margin-left: -20px;
+        margin-bottom: 41px;
+    }
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+.teams .share-btn-area {
+    margin-bottom: 30px;
+}
+
+.teams .select-area .country {
+    margin-bottom: 30px;
+}
+
+.teams .select-area .country a {
+    display: inline-block;
+    width: 245px;
+    height: 64px;
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.64px;
+    color: #2D2D2D;
+    text-decoration: none;
+    line-height: 64px;
+    text-align: center;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.teams .select-area .country a:first-of-type {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    margin-left: 0;
+}
+
+.teams .select-area .country a:last-of-type {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.teams .select-area .country a.active,
+.teams .select-area .country a:hover {
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    opacity: 1;
+}
+
+.teams .select-area .area {
+    margin-bottom: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.teams .select-area .area > div.selected {
+    display: block;
+}
+
+.teams .select-area .area .triple a {
+    height: 54px;
+    line-height: 54px;
+}
+
+.teams .select-area .area .double a {
+    height: 54px;
+    line-height: 54px;
+}
+
+.teams .select-area .area a {
+    position: relative;
+    display: inline-block;
+    width: 144px;
+    margin-right: 2px;
+    font-size: 14px;
+    color: #2D2D2D;
+    letter-spacing: 0.56px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.teams .select-area .area a:last-of-type {
+    margin-right: 0;
+}
+
+.teams .select-area .area a.active,
+.teams .select-area .area a:hover {
+    color: #FFFFFF;
+    background-color: #E5002D;
+    opacity: 1;
+}
+
+.teams .select-area .area .country a.active,
+.teams .select-area .area .country a:hover {
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    opacity: 1;
+}
+
+.teams .ranking {
+    margin-bottom: 0;
+}
+
+.teams .result-area {
+    padding-bottom: 14px;
+}
+
+.teams .result-area table {
+    width: 100%;
+}
+
+.teams .result-area table > thead {
+    border: 0;
+    background-color: #2D2D2D;
+}
+
+.teams .result-area table > thead > tr > th {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Noto Sans JP';
+    letter-spacing: 0.48px;
+    color: #ffffff;
+    font-size: 12px;
+    height: 54px;
+    box-sizing: border-box;
+    padding-left: 0;
+}
+
+.teams .result-area table > thead > tr > th:nth-of-type(8) {
+    line-height: 16px;
+}
+
+.teams .result-area table > thead > tr > th:after {
+    background-color: #ffffff;
+}
+
+.teams .result-area table > tbody > tr > td {
+    height: 72px;
+    text-align: center;
+    padding: 0;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.teams .result-area table > tbody > tr > td:first-of-type {
+    width: 65px;
+}
+
+.teams .result-area table > tbody > tr > td:nth-of-type(2) {
+    position: relative;
+    width: 35px;
+    letter-spacing: 0.28px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.teams .result-area table > tbody > tr > td:nth-of-type(2) span {
+    position: absolute;
+    display: inline-block;
+    top: 14px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid #F5F5F5;
+    text-align: center;
+    line-height: 40px;
+}
+
+.teams .result-area table > tbody > tr > td:nth-of-type(2) span img {
+    display: inline;
+    max-width: 37px;
+    max-height: 37px;
+    background-color: #FFFFFF;
+    vertical-align: middle;
+}
+
+.teams .result-area table > tbody > tr > td:nth-of-type(3) {
+    width: 141px;
+    letter-spacing: 0.32px;
+}
+
+.teams .result-area table > tbody > tr > td:nth-of-type(4) {
+    width: 76px;
+    letter-spacing: 0.32px;
+}
+
+.teams .result-area table > tbody > tr > td:nth-of-type(5) {
+    width: 76px;
+    letter-spacing: 0.32px;
+}
+
+.teams .result-area table > tbody > tr > td:nth-of-type(6) {
+    width: 76px;
+    letter-spacing: 0.32px;
+}
+
+.teams .result-area table > tbody > tr > td:nth-of-type(7) {
+    width: 116px;
+    letter-spacing: 0.32px;
+}
+
+.teams .result-area table > tbody > tr > td:last-of-type {
+    width: 116px;
+    letter-spacing: 0.32px;
+}
+
+.teams .result-area h5 {
+    margin: 50px auto 0px auto;
+    width: 1020px;
+    height: 16px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    color: #2D2D2D;
+    font-weight: normal;
+    text-align: right;
+}
+
+@media screen and (max-width: 750px) {
+
+    .teams .select-area .roster-icon img {
+        width: 220px !important;
+    }
+
+    main {
+        margin-bottom: 58px;
+    }
+
+    .teams .share-btn-area {
+        margin-bottom: 40px;
+    }
+
+    .teams .select-area {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .teams .select-area .area .selected {
+        margin: 10px 0px !important;
+    }
+    .teams .select-area .country {
+        margin-bottom: 0px;
+    }
+
+    .teams .select-area .country a {
+        width: 185.5px;
+        height: 54px;
+        margin-left: 4px;
+        font-size: 12px;
+        letter-spacing: 0.48px;
+        font-weight: bold;
+        line-height: 54px;
+    }
+
+    .teams .select-area .country a:first-of-type {
+        border-radius: 0;
+        margin-left: 0;
+        margin-bottom: 4px;
+    }
+
+    .teams .select-area .country a:last-of-type {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .teams .select-area .country a:nth-child(2n+1) {
+        margin-left: 0;
+    }
+
+    .teams .select-area .area {
+        margin-bottom: 0;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .teams .select-area .area > div {
+    }
+
+    .teams .select-area .area > div.selected {
+        display: block;
+    }
+
+    .teams .select-area .area a {
+        position: relative;
+        display: inline-block;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        color: #2D2D2D;
+        text-decoration: none;
+        text-align: center;
+        background-color: #F5F5F5;
+    }
+
+    .teams .select-area .area a.active,
+    .teams .select-area .area a:hover {
+        color: #FFFFFF;
+        background-color: #E5002D;
+        opacity: 1;
+    }
+
+    .teams .select-area .area .double a {
+        position: relative;
+        width: 186px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 12px;
+        letter-spacing: 0.48px;
+    }
+
+    .teams .select-area .area .double a:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .teams .select-area .area .triple a {
+        width: 123px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 12px;
+        letter-spacing: 0.48px;
+    }
+
+    .teams .select-area .area .triple a:nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    .teams .result-area {
+        padding-bottom: 0px;
+    }
+
+    .teams .result-area .ranking {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .teams .result-area .ranking .result-table {
+        overflow: auto;
+    }
+
+    .teams .result-area table {
+        margin: 0;
+        width: 737px;
+    }
+
+    .teams .result-area table > thead {
+        border: 0;
+        background-color: #2D2D2D;
+    }
+
+    .teams .result-area table > thead > tr > th {
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Noto Sans JP';
+        font-size: 10px;
+        letter-spacing: 0.4px;
+        color: #ffffff;
+        height: 40px;
+        line-height: 40px;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .teams .result-area table > thead > tr > th:nth-of-type(8) {
+        line-height: 14px;
+    }
+
+    .teams .result-area table > thead > tr > th:after {
+        background-color: #ffffff;
+    }
+
+    .teams .result-area table > tbody > tr > td {
+        height: 54px;
+        text-align: center;
+        padding: 0;
+        font-family: Roboto Condensed;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 54px;
+    }
+
+    .teams .result-area table > tbody > tr > td:first-of-type {
+        width: 55px;
+    }
+
+    .teams .result-area table > tbody > tr > td:nth-of-type(2) {
+        position: relative;
+        width: 232px;
+        font-size: 12px;
+        letter-spacing: 0.24px;
+        box-sizing: border-box;
+        padding-left: 53px;
+        text-align: left;
+    }
+
+    .teams .result-area table > tbody > tr > td:nth-of-type(2) span {
+        position: absolute;
+        display: inline-block;
+        top: 0px;
+        left: 9px;
+        width: 35px;
+        height: 35px;
+        box-sizing: border-box;
+        border: 0;
+        text-align: center;
+        line-height: 54px;
+    }
+
+    .teams .result-area table > tbody > tr > td:nth-of-type(2) span img {
+        max-width: 34px;
+        max-height: 34px;
+        border: 1px solid #F5F5F5;
+        background-color: #FFFFFF;
+        vertical-align: middle;
+    }
+
+    .teams .result-area table > tbody > tr > td:nth-of-type(3) {
+        width: 106px;
+        letter-spacing: 0.24px;
+    }
+
+    .teams .result-area table > tbody > tr > td:nth-of-type(4) {
+        width: 57px;
+        letter-spacing: 0.24px;
+    }
+
+    .teams .result-area table > tbody > tr > td:nth-of-type(5) {
+        width: 57px;
+        letter-spacing: 0.24px;
+    }
+
+    .teams .result-area table > tbody > tr > td:nth-of-type(6) {
+        width: 57px;
+        letter-spacing: 0.24px;
+    }
+
+    .teams .result-area table > tbody > tr > td:nth-of-type(7) {
+        width: 87px;
+        letter-spacing: 0.24px;
+    }
+
+    .teams .result-area table > tbody > tr > td:last-of-type {
+        width: 86px;
+        letter-spacing: 0.24px;
+    }
+
+    .teams .result-area h5 {
+        width: 100%;
+        height: 13px;
+        margin-top: 28px;
+        margin-bottom: 0;
+        padding-right: 16px;
+        box-sizing: border-box;
+        font-size: 12px;
+        letter-spacing: 0.48px;
+        font-weight: normal;
+    }
+
+    .teams .select-area .area .double a,
+    .teams .select-area .conference a,
+    .teams .select-area .area .country a,
+    main section .col3 .col, main section .col3-2 .col {
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+
+}
+
+.teams .select-area .area .selected {
+    margin: 50px 0px;
+}
+
+.contents {
+
+    width: 1200px;
+    margin: 0px auto;
+
+}
+
+#dataTable1_length {
+    display: none;
+}
+
+.teams .select-area .conference a {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    font-size: 14px;
+    color: #2D2D2D;
+    letter-spacing: 0.56px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom: 7px solid #a09d9d;
+    background-color: inherit;
+    height: 35px !important;
+    width: 260px !important;
+    line-height: 35px !important;
+    margin-top: 40px;
+}
+
+.teams .select-area .conference a.active, .teams .select-area .conference a:hover {
+    color: #2D2D2D;
+    background-color: inherit;
+    opacity: 1;
+    border-bottom: 7px solid #E5002D;
+}
+
+.teams .select-area .roster-icon a:hover, .teams .select-area .roster-icon a {
+    background-color: inherit !important;
+}
+
+main section .col3 .col, main section .col3-2 .col {
+    width: 445px;
+    text-align: center;
+}
+
+.result-table {
+    text-align: center;
+}

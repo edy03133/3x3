@@ -1,0 +1,122 @@
+footer {
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+a.arrow {
+  color: #000;
+  cursor: pointer;
+}
+
+p {
+  line-height: initial !important;
+}
+
+header {
+  font-family: "Roboto", "Noto Sans JP", sans-serif !important;
+  line-height: 1.15 !important;
+  /* 1 */
+  overflow: visible !important;
+}
+
+header img {
+  max-width: initial !important;
+}
+
+header a, header a:visited, header a:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+header a:hover {
+  color: #E5002D !important;
+  opacity: 1 !important;
+}
+
+header .navigation {
+  color: #FFFFFF;
+}
+
+header .navigation a:hover {
+  color: #FFFFFF !important;
+}
+
+header .breadcrumb {
+  margin-bottom: 0;
+  color: #2D2D2D !important;
+}
+
+header .breadcrumb a:hover {
+  color: #E5002D !important;
+}
+
+header .breadcrumb .current {
+  cursor: text !important;
+}
+
+footer {
+  font-family: "Roboto", "Noto Sans JP", sans-serif !important;
+  line-height: 1.15 !important;
+  /* 1 */
+  color: #000000;
+}
+
+footer p {
+  line-height: 1.15 !important;
+  /* 1 */
+}
+
+footer a, footer a:visited, footer a:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  color: #E5002D !important;
+  opacity: 1 !important;
+}
+
+main {
+  margin-bottom: 180px;
+}
+
+main section {
+  padding: 0;
+}
+
+footer {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin-bottom: 80px;
+  }
+  section, header {
+    padding: 0 !important;
+  }
+  main section h1 span {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+  }
+  a.arrow {
+    width: 226px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 11px;
+    line-height: 46px;
+  }
+  a.arrow:before {
+    width: 23px;
+    top: 23px;
+    left: 28px;
+  }
+  a.arrow:after {
+    width: 7px;
+    height: 7px;
+    top: 19px;
+    left: 42px;
+  }
+}

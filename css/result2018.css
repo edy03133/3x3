@@ -1,0 +1,41 @@
+main {
+  margin-bottom: 0 !important;
+}
+
+main section h1 {
+  background: none;
+  color: #333333;
+  font-weight: normal;
+}
+
+main section h1:before, main section h1:after {
+  content: none;
+}
+
+.share-btn-area {
+  font-size: 0;
+}
+
+.page-game2018 li {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.page-game2018 p.notes {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page-game2018 .reports h2 {
+  font-size: 14px !important;
+}
+
+.page-game2018 .reports h2 P {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+}

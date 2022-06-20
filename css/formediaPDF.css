@@ -1,0 +1,363 @@
+main {
+    margin-bottom: 160px;
+}
+
+.formediaPDF a.arrow {
+    width: 580px;
+    height: 84px;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.formediaPDF a.arrow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 43px;
+    width: 41px;
+    height: 1px;
+    background: #E5002D;
+}
+
+.formediaPDF a.arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 36px;
+    left: 68px;
+    border-top: 1px solid #E5002D;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.formediaPDF a.arrow:hover::before {
+    background: #ffffff;
+}
+
+.formediaPDF a.arrow:hover::after {
+    border-top: 1px solid #ffffff;
+}
+
+.formediaPDF .select-area .country {
+    margin-bottom: 30px;
+}
+
+.formediaPDF .select-area .country a {
+    display: inline-block;
+    width: 252px;
+    height: 64px;
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2D2D2D;
+    text-decoration: none;
+    line-height: 64px;
+    text-align: center;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.formediaPDF .select-area .country a:first-of-type {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    margin-left: 0;
+}
+
+.formediaPDF .select-area .country a:last-of-type {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.formediaPDF .select-area .country a.active,
+.formediaPDF .select-area .country a:hover {
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    opacity: 1;
+}
+
+.formediaPDF .select-area .month {
+    padding-bottom: 59px;
+    border-bottom: 1px solid #F5F5F5;
+    text-align: center;
+}
+
+.formediaPDF .select-area .month a {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-left: 114px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    border-radius: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2D2D2D;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.formediaPDF .select-area .month a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 61px;
+    left: 37px;
+    border-top: 1px solid #E5002D;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.formediaPDF .select-area .month a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 61px;
+    right: 37px;
+    border-top: 1px solid #E5002D;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.formediaPDF .select-area .month a:first-of-type {
+    margin-left: 0;
+}
+
+.formediaPDF .select-area .month a.active,
+.formediaPDF .select-area .month a:hover {
+    color: #FFFFFF;
+    background-color: #E5002D;
+    opacity: 1;
+}
+
+.formediaPDF .select-area .month a.active::before,
+.formediaPDF .select-area .month a.active::after,
+.formediaPDF .select-area .month a:hover::before,
+.formediaPDF .select-area .month a:hover::after {
+    border-color: #FFFFFF;
+}
+
+.formediaPDF .result-area .result {
+    display: none;
+}
+
+.formediaPDF .result-area .result:first-of-type {
+    display: block;
+}
+
+.formediaPDF .result-area .result .game {
+    padding: 60px 0 0 0;
+}
+
+.formediaPDF .result-area .result .game a {
+    display: inline-block;
+    width: 240px;
+    height: 54px;
+    box-sizing: border-box;
+    border-radius: 27px;
+    border: 1px solid #F5F5F5;
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 52px;
+    text-align: center;
+    font-weight: bold;
+    color: #2D2D2D;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.formediaPDF .result-area .result .game a:nth-of-type(4n) {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.formediaPDF .result-area .result .game a.active,
+.formediaPDF .result-area .result .game a:hover {
+    color: #FFFFFF;
+    background-color: #E5002D;
+    opacity: 1;
+}
+
+.formediaPDF .result-area .result .game a.active::before,
+.formediaPDF .result-area .result .game a.active::after,
+.formediaPDF .result-area .result .game a:hover::before,
+.formediaPDF .result-area .result .game a:hover::after {
+    border-color: #FFFFFF;
+}
+
+.formediaPDF .result-area .result .result-img {
+    display: none;
+}
+
+.formediaPDF .result-area .result .result-img:nth-of-type(2) {
+    display: block;
+}
+
+.formediaPDF .result-area .result .result-img h2 {
+    position: relative;
+    width: 100%;
+    height: 138px;
+    bottom: -2px;
+    margin-top: 0;
+    margin-bottom: 55px;
+    border-bottom: 2px solid #F5F5F5;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.formediaPDF .result-area .result .result-img h2 span {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 138px;
+    line-height: 138px;
+    text-align: center;
+}
+
+.formediaPDF .result-area .result .result-img h2 span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: calc((100% - 320px) / 2);
+    width: 320px;
+    height: 2px;
+    background-color: #E5002D;
+}
+
+.formediaPDF .result-area .result .result-img a {
+    display: inline-block;
+    width: 240px;
+    height: 160px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 105px;
+    box-sizing: border-box;
+    background: url(/office/assets/img/icon/pdf.svg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.formediaPDF .result-area .result .result-img a:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        margin-bottom: 50px;
+    }
+    .formediaPDF a.arrow {
+        width: 314px;
+        height: 50px;
+        font-size: 11px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+    .formediaPDF a.arrow::before {
+        width: 23px;
+        top: 25px;
+        left: 28px;
+    }
+    .formediaPDF a.arrow::after {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: 39px;
+    }
+    .formediaPDF .result-area .result .game {
+        margin-left: -5px;
+        margin-right: -5px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+    .formediaPDF .result-area .result .game a {
+        width: 170px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #F5F5F5;
+        margin-right: 5px;
+        font-size: 10px;
+        letter-spacing: 0.2px;
+        line-height: 38px;
+    }
+    .formediaPDF .result-area .result .game a:nth-of-type(4n) {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .formediaPDF .result-area .result .game a:nth-of-type(2n) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .formediaPDF .result-area .result .game a.active,
+    .formediaPDF .result-area .result .game a:hover {
+        color: #FFFFFF;
+        background-color: #E5002D;
+        opacity: 1;
+    }
+    .formediaPDF .result-area .result .game a.active::before,
+    .formediaPDF .result-area .result .game a.active::after,
+    .formediaPDF .result-area .result .game a:hover::before,
+    .formediaPDF .result-area .result .game a:hover::after {
+        border-color: #FFFFFF;
+    }
+    .formediaPDF .result-area .result .result-img h2 {
+        width: 100%;
+        height: 52px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.56px;
+    }
+    .formediaPDF .result-area .result .result-img h2 span {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 52px;
+        line-height: 52px;
+        text-align: center;
+    }
+    .formediaPDF .result-area .result .result-img h2 span:after {
+        left: calc((100% / 2) - 100px);
+        width: 200px;
+    }
+    .formediaPDF .result-area .result .result-img h2:nth-of-type(2),
+    .formediaPDF .result-area .result .result-img h2:nth-of-type(3) {
+        height: 74px;
+    }
+    .formediaPDF .result-area .result .result-img h2:nth-of-type(2) span,
+    .formediaPDF .result-area .result .result-img h2:nth-of-type(3) span {
+        height: 74px;
+    }
+    .formediaPDF .result-area .result .result-img a {
+        display: inline-block;
+        width: 157px;
+        height: 105px;
+        padding-top: 75px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        background-size: 40px;
+    }
+    .formediaPDF .result-area .result .result-img a:nth-of-type(2n) {
+        margin-right: 0;
+    }
+}

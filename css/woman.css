@@ -1,0 +1,817 @@
+main {
+    margin-bottom: 180px;
+}
+
+.woman .share-btn-area {
+    margin-bottom: 30px;
+}
+
+.woman h2 {
+    width: 100%;
+    height: 138px;
+    bottom: -2px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    border-bottom: 2px solid #F5F5F5;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.woman h2 span {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 138px;
+    justify-content: center;
+    align-items: center;
+}
+
+.woman h2 span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: calc((100% / 2) - 160px);
+    width: 320px;
+    height: 2px;
+    background-color: #E5002D;
+}
+
+.woman .select-area {
+    margin-bottom: 52px;
+}
+
+.woman .select-area a {
+    display: inline-block;
+    width: 252px;
+    height: 64px;
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.64px;
+    color: #2D2D2D;
+    text-decoration: none;
+    line-height: 64px;
+    text-align: center;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.woman .select-area a:first-of-type {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    margin-left: 0;
+}
+
+.woman .select-area a:last-of-type {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.woman .select-area a.active,
+.woman .select-area a:hover {
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    opacity: 1;
+}
+
+.woman .contents h3,
+.woman .contents h4 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 64px;
+    letter-spacing: 0.96px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.woman .contents p {
+    margin: 0 180px 60px 180px;
+    width: 660px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2D2D2D;
+}
+
+.woman .contents ul.season-format {
+    margin: 0 180px 60px 180px;
+    padding: 0;
+    width: 660px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2D2D2D;
+    list-style: none;
+}
+
+.woman .contents ul.season-format>li {
+    margin-bottom: 36px;
+}
+
+.woman .contents ul.season-format>li:last-of-type {
+    margin-bottom: 0;
+}
+
+.woman .woman-about table {
+    border: 1px solid #F5F5F5;
+    border-collapse: collapse;
+}
+
+.woman .woman-about table tr>td:first-of-type {
+    width: 150px;
+    height: auto;
+    background-color: #F5F5F5;
+    padding-top: 28px;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    vertical-align: top;
+    text-align: center;
+    color: #2D2D2D;
+}
+
+.woman .woman-about table tr>td:last-of-type {
+    margin: 0;
+    width: 838px;
+    height: auto;
+    border-bottom: 1px solid #F5F5F5;
+    padding-top: 23.5px;
+    padding-bottom: 23.5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2D2D2D;
+}
+
+.woman .woman-about .contents-head {
+    margin-bottom: 200px;
+}
+
+.woman .woman-about .contents-main {
+    margin-bottom: 175px;
+}
+
+.woman .woman-about .contents-main:nth-of-type(3) {
+    margin-bottom: 120px;
+}
+
+.woman .woman-about img {
+    display: inline-block;
+    width: 445px;
+    height: 296px;
+    object-fit: cover;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.woman .woman-about img:nth-of-type(2n) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.woman .woman-schedule {
+    margin-bottom: 122px;
+}
+
+.woman .woman-schedule h3 {
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    line-height: 64px;
+    text-align: center;
+    border-radius: 32px;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    color: #2D2D2D;
+}
+
+.woman .woman-schedule h3 .btn-list {
+    display: none;
+}
+
+.woman .woman-schedule .record {
+    height: 71px;
+    box-sizing: border-box;
+    border-bottom: 1px dotted #F5F5F5;
+    padding: 19px 0 18px 0;
+}
+
+.woman .woman-schedule .record:last-of-type {
+    height: 70px;
+    border: 0;
+}
+
+.woman .woman-schedule .record ul {
+    padding: 0;
+}
+
+.woman .woman-schedule .record ul>li {
+    position: relative;
+    display: inline-block;
+    width: 134px;
+    height: 33px;
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 33px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2D2D2D;
+    border-right: 2px solid #F5F5F5;
+}
+
+.woman .woman-schedule .record ul>li.en {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.woman .woman-schedule .record ul>li:first-of-type {
+    width: 230px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.woman .woman-schedule .record ul>li:first-of-type span {
+    position: absolute;
+    top: 0;
+    right: 28px;
+    font-family: Roboto Condensed;
+    font-weight: normal;
+}
+
+.woman .woman-schedule .record ul>li:last-of-type {
+    width: 504px;
+    padding-left: 30px;
+    font-weight: inherit;
+    text-align: left;
+    border: 0;
+}
+
+.woman .woman-schedule .record ul>li:last-of-type a.btn-link {
+    position: absolute;
+    top: -3px;
+    right: -18px;
+}
+
+.woman .woman-schedule .record ul>li:last-of-type a.btn-link:hover {
+    opacity: 1;
+}
+
+.woman .woman-schedule .schedule {
+    margin-bottom: 175px;
+}
+
+.woman .woman-schedule:last-of-type {
+    border-bottom: 1px dotted #F5F5F5;
+}
+
+.woman .woman-standings {
+    margin-bottom: 122px;
+}
+
+.woman .woman-standings table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.woman .woman-standings table>thead {
+    border: 0;
+    background-color: #2D2D2D;
+}
+
+.woman .woman-standings table>thead>tr>th {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Noto Sans JP';
+    letter-spacing: 0.48px;
+    color: #ffffff;
+    font-size: 12px;
+    height: 54px;
+    box-sizing: border-box;
+    border: 0;
+    padding-left: 0;
+}
+
+.woman .woman-standings table>thead>tr>th:nth-of-type(8) {
+    line-height: 16px;
+}
+
+.woman .woman-standings table>thead>tr>th:last-of-type::after {
+    display: none;
+}
+
+.woman .woman-standings table>thead>tr>th:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 6px;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+}
+
+.woman .woman-standings table>tbody>tr:nth-of-type(2n) {
+    background-color: #F5F5F5;
+}
+
+.woman .woman-standings table>tbody>tr>td {
+    height: 72px;
+    text-align: center;
+    padding: 0;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.woman .woman-standings table>tbody>tr>td:first-of-type {
+    width: 65px;
+}
+
+.woman .woman-standings table>tbody>tr>td:nth-of-type(2) {
+    position: relative;
+    width: 334px;
+    letter-spacing: 0.28px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.woman .woman-standings table>tbody>tr>td:nth-of-type(2) span {
+    position: absolute;
+    display: inline-block;
+    top: 14px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid #F5F5F5;
+    text-align: center;
+    line-height: 40px;
+}
+
+.woman .woman-standings table>tbody>tr>td:nth-of-type(2) span img {
+    display: inline;
+    max-width: 37px;
+    max-height: 37px;
+    background-color: #FFFFFF;
+    vertical-align: middle;
+}
+
+.woman .woman-standings table>tbody>tr>td:nth-of-type(3) {
+    width: 141px;
+    letter-spacing: 0.32px;
+}
+
+.woman .woman-standings table>tbody>tr>td:nth-of-type(4) {
+    width: 76px;
+    letter-spacing: 0.32px;
+}
+
+.woman .woman-standings table>tbody>tr>td:nth-of-type(5) {
+    width: 76px;
+    letter-spacing: 0.32px;
+}
+
+.woman .woman-standings table>tbody>tr>td:nth-of-type(6) {
+    width: 76px;
+    letter-spacing: 0.32px;
+}
+
+.woman .woman-standings table>tbody>tr>td:nth-of-type(7) {
+    width: 116px;
+    letter-spacing: 0.32px;
+}
+
+.woman .woman-standings table>tbody>tr>td:last-of-type {
+    width: 116px;
+    letter-spacing: 0.32px;
+}
+
+.woman .woman-team ul {
+    margin-top: -5px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.woman .woman-team ul>li {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 56px;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #F5F5F5;
+    margin-right: 40px;
+    font-family: Roboto Condensed;
+    font-weight: normal;
+    text-align: right;
+    line-height: 55px;
+    font-size: 12px;
+    letter-spacing: 0.24px;
+    color: #2D2D2D;
+}
+
+.woman .woman-team ul>li img {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #F5F5F5;
+}
+
+.woman .woman-team ul>li:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        margin-bottom: 80px;
+    }
+    .woman .share-btn-area {
+        margin-bottom: 40px;
+    }
+    .woman h2 {
+        width: 100%;
+        height: 52px;
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.56px;
+    }
+    .woman h2 span {
+        width: 100%;
+        height: 52px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .woman h2 span:after {
+        left: calc((100% / 2) - 100px);
+        width: 200px;
+    }
+    .woman .select-area {
+        margin-bottom: 21px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .woman .select-area a {
+        width: 185.5px;
+        height: 54px;
+        margin-left: 4px;
+        font-size: 12px;
+        letter-spacing: 0.48px;
+        font-weight: bold;
+        line-height: 54px;
+    }
+    .woman .select-area a:first-of-type {
+        border-radius: 0;
+        margin-left: 0;
+        margin-bottom: 4px;
+    }
+    .woman .select-area a:last-of-type {
+        border-radius: 0;
+        margin-bottom: 0px;
+    }
+    .woman .select-area a:nth-child(2n+1) {
+        margin-left: 0;
+    }
+    .woman .contents h3,
+    .woman .contents h4 {
+        width: 100%;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.64px;
+        margin-bottom: 36px;
+    }
+    .woman .contents h4 {
+        width: 375px !important;
+    }
+    .woman .contents p {
+        margin: 0 0 30px 0;
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .woman .contents ul.season-format {
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none;
+    }
+    .woman .contents ul.season-format>li {
+        margin-bottom: 36px;
+    }
+    .woman .contents ul.season-format>li:last-of-type {
+        margin-bottom: 0;
+    }
+    .woman .woman-about table {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: 375px;
+        box-sizing: border-box;
+        border: 0;
+        border-collapse: collapse;
+    }
+    .woman .woman-about table tr>td {
+        display: block;
+        height: 46px;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .woman .woman-about table tr>td:first-of-type {
+        width: 100%;
+        height: 46px;
+        padding-top: 13px;
+        border: 0;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.48px;
+        vertical-align: middle;
+    }
+    .woman .woman-about table tr>td:last-of-type {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        border: 0;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .woman .woman-about table tr:last-of-type>td:last-of-type {
+        border-bottom: 1px solid #F5F5F5;
+    }
+    .woman .woman-about .contents-head {
+        margin-bottom: 80px;
+    }
+    .woman .woman-about .contents-main {
+        margin-bottom: 80px;
+    }
+    .woman .woman-about .contents-main:nth-of-type(3) {
+        margin-bottom: 60px;
+    }
+    .woman .woman-about img {
+        width: 157px;
+        height: 105px;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .woman .woman-schedule {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 61px;
+    }
+    .woman .woman-schedule h3 {
+        width: calc(100% + 40px);
+        position: relative;
+        height: 50px;
+        margin: 0;
+        line-height: 50px;
+        border-radius: 0;
+        background-color: #FFFFFF;
+        font-size: 12px;
+        letter-spacing: 0.48px;
+        color: #2D2D2D;
+        border-top: 2px solid #F5F5F5;
+        border-bottom: 2px solid #F5F5F5;
+    }
+    .woman .woman-schedule h3 .btn-list {
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 14px;
+        right: 16px;
+        border-radius: 12.5px;
+        background-color: #DBDBDB;
+    }
+    .woman .woman-schedule h3 .btn-list.close {
+        background-color: #222222;
+        transform: rotate(180deg);
+    }
+    .woman .woman-schedule h3 .btn-list::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 4px;
+        top: 10.5px;
+        right: 9px;
+        background: url(/office/assets/img/icon/arrow_top.svg);
+        background-size: 7px 4px;
+    }
+    .woman .woman-schedule .accordion {
+        width: calc(100% + 40px);
+    }
+    .woman .woman-schedule .record {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        border-bottom: 1px solid #F5F5F5;
+        padding: 0;
+    }
+    .woman .woman-schedule .record:last-of-type {
+        height: auto;
+        margin-bottom: 78px;
+        border-bottom: 1px solid #F5F5F5;
+    }
+    .woman .woman-schedule .record ul {
+        padding: 0;
+    }
+    .woman .woman-schedule .record ul>li {
+        display: block;
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        font-size: 12px;
+        letter-spacing: 0.48px;
+        border: 0;
+    }
+    .woman .woman-schedule .record ul>li.en {
+        font-size: 16px;
+    }
+    .woman .woman-schedule .record ul>li:first-of-type {
+        width: 100%;
+        padding-left: 20px;
+        background-color: #F5F5F5;
+    }
+    .woman .woman-schedule .record ul>li:first-of-type span {
+        display: none;
+    }
+    .woman .woman-schedule .record ul>li:nth-of-type(2)::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 24px;
+        background-color: #F5F5F5;
+        top: 12px;
+        right: -1px;
+    }
+    .woman .woman-schedule .record ul>li:nth-of-type(2),
+    .woman .woman-schedule .record ul>li:nth-of-type(3) {
+        border: 0;
+        display: inline-block;
+        border-bottom: 1px solid #F5F5F5;
+        width: 50%;
+    }
+    .woman .woman-schedule .record ul>li:last-of-type {
+        width: 100%;
+        padding-left: 30px;
+        font-weight: inherit;
+        text-align: left;
+    }
+    .woman .woman-schedule .record ul>li:last-of-type a.btn-link {
+        position: absolute;
+        top: -85px;
+        right: 16px;
+    }
+    .woman .woman-schedule .schedule {
+        margin-bottom: 80px;
+    }
+    .woman .woman-schedule:last-of-type {
+        border-bottom: 1px dotted #F5F5F5;
+    }
+    .woman .woman-standings {
+        width: 375px;
+        padding: 0;
+        margin-bottom: 60px;
+        overflow: auto;
+    }
+    .woman .woman-standings table {
+        margin: 0;
+        width: 737px;
+    }
+    .woman .woman-standings table>thead {
+        border: 0;
+        background-color: #2D2D2D;
+    }
+    .woman .woman-standings table>thead>tr>th {
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Noto Sans JP';
+        font-size: 10px;
+        letter-spacing: 0.4px;
+        color: #ffffff;
+        height: 40px;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .woman .woman-standings table>thead>tr>th:nth-of-type(8) {
+        line-height: 14px;
+    }
+    .woman .woman-standings table>thead>tr>th:after {
+        height: 4px;
+        background-color: #ffffff;
+    }
+    .woman .woman-standings table>tbody>tr>td {
+        height: 54px;
+        text-align: center;
+        padding: 0;
+        font-family: Roboto Condensed;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 54px;
+    }
+    .woman .woman-standings table>tbody>tr>td:first-of-type {
+        width: 55px;
+    }
+    .woman .woman-standings table>tbody>tr>td:nth-of-type(2) {
+        position: relative;
+        width: 232px;
+        font-size: 12px;
+        letter-spacing: 0.24px;
+        box-sizing: border-box;
+        text-align: right;
+    }
+    .woman .woman-standings table>tbody>tr>td:nth-of-type(2) span {
+        position: absolute;
+        display: inline-block;
+        top: 0px;
+        left: 9px;
+        width: 35px;
+        height: 35px;
+        box-sizing: border-box;
+        border: 0;
+        text-align: center;
+        line-height: 54px;
+    }
+    .woman .woman-standings table>tbody>tr>td:nth-of-type(2) span img {
+        max-width: 34px;
+        max-height: 34px;
+        border: 1px solid #F5F5F5;
+        background-color: #FFFFFF;
+        vertical-align: middle;
+    }
+    .woman .woman-standings table>tbody>tr>td:nth-of-type(3) {
+        width: 106px;
+        letter-spacing: 0.24px;
+    }
+    .woman .woman-standings table>tbody>tr>td:nth-of-type(4) {
+        width: 57px;
+        letter-spacing: 0.24px;
+    }
+    .woman .woman-standings table>tbody>tr>td:nth-of-type(5) {
+        width: 57px;
+        letter-spacing: 0.24px;
+    }
+    .woman .woman-standings table>tbody>tr>td:nth-of-type(6) {
+        width: 57px;
+        letter-spacing: 0.24px;
+    }
+    .woman .woman-standings table>tbody>tr>td:nth-of-type(7) {
+        width: 87px;
+        letter-spacing: 0.24px;
+    }
+    .woman .woman-standings table>tbody>tr>td:last-of-type {
+        width: 86px;
+        letter-spacing: 0.24px;
+    }
+    .woman .woman-team {
+        width: 375px;
+        padding: 0;
+    }
+    .woman .woman-team ul {
+        margin-top: -5px;
+        margin-bottom: 30px;
+        padding: 0;
+        border-top: 2px solid #F5F5F5;
+        border-bottom: 1px solid #F5F5F5;
+    }
+    .woman .woman-team ul>li {
+        display: block;
+        width: 100%;
+        height: 55px;
+        margin-right: 0;
+        font-family: Roboto Condensed;
+        font-weight: normal;
+        text-align: center;
+        line-height: 54px;
+        font-size: 12px;
+        letter-spacing: 0.24px;
+    }
+    .woman .woman-team ul>li img {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    .woman .woman-team ul>li:nth-of-type(4n) {
+        margin-right: 0;
+    }
+}

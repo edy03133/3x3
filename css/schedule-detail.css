@@ -1,0 +1,4067 @@
+* {
+    outline: none;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+body {
+    padding: 0 !important;
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+}
+
+a:hover {
+    opacity: .8;
+    text-decoration: none !important;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    margin-bottom: 150px;
+    font-size: 0;
+}
+
+main section {
+    margin-bottom: 100px;
+}
+
+main section h1 {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 140px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    font-size: 28px;
+    letter-spacing: 1.12px;
+    font-weight: bold;
+}
+
+main section h1:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: calc((100% - 1186px) / 2);
+    height: 140px;
+    background-color: #E5002D;
+}
+
+main section h1:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: calc((100% - 1186px) / 2);
+    height: 140px;
+    right: 0;
+    background-color: #000000;
+}
+
+main section h1 span {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    line-height: 140px;
+}
+
+main section h1.sub {
+    width: 100%;
+    height: 138px;
+    bottom: -2px;
+    margin-top: 0;
+    margin-bottom: 90px;
+    border-bottom: 2px solid #F5F5F5;
+    font-size: 28px;
+    letter-spacing: 1.12px;
+    font-weight: bold;
+    background: none;
+    color: #000;
+}
+
+main section h1.sub:before, main section h1.sub:after {
+    content: none !important;
+}
+
+main section h1.sub span {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 138px;
+    text-align: center;
+    line-height: 138px;
+}
+
+main section h1.sub span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: calc((100% / 2) - 250px);
+    width: 500px;
+    height: 2px;
+    background-color: #E5002D;
+}
+
+main section .contents {
+    width: 1060px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+main section .contents.full-width {
+    width: 100%;
+    padding: 0;
+}
+
+main section .contents p {
+    margin-bottom: 2em;
+}
+
+main section .contents .information-text {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+main section .col2 .col, main section .col2-2 .col {
+    display: inline-block;
+    width: 480px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+
+main section .col2 .col:nth-of-type(2n), main section .col2-2 .col:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+main section .col2-deviation .col {
+    display: inline-block;
+    width: 670px;
+    margin: 0 50px 0 0;
+    vertical-align: top;
+}
+
+main section .col2-deviation .col:nth-of-type(2n) {
+    width: 300px;
+    margin: 0;
+}
+
+main section .col3 .col, main section .col3-2 .col {
+    display: inline-block;
+    width: 320px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+
+main section .col3 .col:nth-of-type(3n), main section .col3-2 .col:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+main section .recommendation .col {
+    margin-bottom: 21px;
+}
+
+main section .recommendation img {
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+main section .recommendation .recommendation-text {
+    padding: 0 10px;
+}
+
+main section .recommendation .recommendation-text .recommendation-date {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: 15px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    color: #5A5A5A;
+    line-height: 15px;
+}
+
+main section .recommendation .recommendation-text .recommendation-date:after {
+    content: '|';
+    position: absolute;
+    right: -12px;
+}
+
+main section .recommendation .recommendation-text .recommendation-tag {
+    display: inline-block;
+    width: auto;
+    height: 15px;
+}
+
+main section .recommendation .recommendation-text .recommendation-tag a {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    color: #5A5A5A;
+    cursor: pointer;
+}
+
+main section .recommendation .recommendation-text .recommendation-tag a:first-of-type {
+    margin-left: 24px;
+}
+
+main section .recommendation .recommendation-text .recommendation-tag a:hover {
+    color: #E5002D;
+}
+
+main section .recommendation .recommendation-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #2D2D2D;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+main section .recommendation .recommendation-text p a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+main section .recommendation-btn {
+    margin-top: 65px;
+}
+
+main section .sns {
+    position: relative;
+}
+
+main section .sns.contents {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+main section .sns .col3 {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+main section .sns:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 153px;
+    background-color: #F5F5F5;
+}
+
+main section .sns h2 {
+    width: 320px;
+    height: 138px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    color: #000000;
+}
+
+main section .sns h2 span {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    width: 320px;
+    height: 138px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #E5002D;
+}
+
+main section .sns .twitter {
+    border: 2px solid #F5F5F5;
+}
+
+main section .sns .insta {
+    border: 2px solid #F5F5F5;
+    overflow: hidden;
+}
+
+
+/* carousel */
+.slick-slide img {
+    display: inline !important;
+}
+
+.carousel button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.carousel.conference, .carousel.article {
+    position: relative;
+}
+
+.carousel.conference .prev, .carousel.article .prev {
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 90px;
+    top: 32px;
+    left: 0;
+    border-radius: 45px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.2s;
+}
+
+.carousel.conference .prev:before, .carousel.article .prev:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 12px;
+    height: 21px;
+    top: 34px;
+    left: 36px;
+    background: url(/premier/assets/img/icon/previous.svg);
+    background-size: 12px 21px;
+    transition: 0.2s;
+}
+
+.carousel.conference .prev:hover::before, .carousel.article .prev:hover::before {
+    background: url(/premier/assets/img/icon/previous_hover.svg);
+}
+
+.carousel.conference .next, .carousel.article .next {
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 90px;
+    top: 32px;
+    right: 0;
+    border-radius: 45px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.2s;
+}
+
+.carousel.conference .next:before, .carousel.article .next:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 12px;
+    height: 21px;
+    top: 34px;
+    right: 36px;
+    background: url(/premier/assets/img/icon/next.svg);
+    background-size: 12px 21px;
+    transition: 0.2s;
+}
+
+.carousel.conference .next:hover::before, .carousel.article .next:hover::before {
+    background: url(/premier/assets/img/icon/next_hover.svg);
+}
+
+.carousel.conference .prev:hover, .carousel.conference .next:hover, .carousel.article .prev:hover, .carousel.article .next:hover {
+    background-color: #E5002D;
+}
+
+.carousel.conference .slick-dots, .carousel.article .slick-dots {
+    position: absolute;
+    display: block;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    padding: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel.conference .slick-dots > li, .carousel.article .slick-dots > li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 9px;
+    padding: 0;
+}
+
+.carousel.conference .slick-dots > li button, .carousel.article .slick-dots > li button {
+    position: relative;
+    text-indent: -9999px;
+}
+
+.carousel.conference .slick-dots > li button:before, .carousel.article .slick-dots > li button:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-size: 6px 6px;
+    background: url(/premier/assets/img/icon/dot.svg);
+    line-height: 6px;
+    text-indent: 0;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: -3px;
+    color: #DBDBDB;
+    cursor: pointer;
+}
+
+.carousel.conference .slick-dots > li button:hover::before, .carousel.article .slick-dots > li button:hover::before {
+    background: url(/premier/assets/img/icon/dot_active.svg);
+}
+
+.carousel.conference .slick-dots > li.slick-active button:before, .carousel.article .slick-dots > li.slick-active button:before {
+    background: url(/premier/assets/img/icon/dot_active.svg);
+}
+
+.carousel.recommendation .slick-dots {
+    position: absolute;
+    display: block;
+    top: 281px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    padding: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel.recommendation .slick-dots > li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 9px;
+    padding: 0;
+}
+
+.carousel.recommendation .slick-dots > li button {
+    position: relative;
+    text-indent: -9999px;
+}
+
+.carousel.recommendation .slick-dots > li button:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-size: 6px 6px;
+    background: url(/premier/assets/img/icon/dot.svg);
+    line-height: 6px;
+    text-indent: 0;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: -3px;
+    color: #DBDBDB;
+    cursor: pointer;
+}
+
+.carousel.recommendation .slick-dots > li button:hover::before {
+    background: url(/premier/assets/img/icon/dot_active.svg);
+}
+
+.carousel.recommendation .slick-dots > li.slick-active button:before {
+    background: url(/premier/assets/img/icon/dot_active.svg);
+}
+
+@media screen and (max-width: 750px) {
+    .carousel.conference .prev {
+        width: 35px;
+        height: 70px;
+        top: 15px;
+        left: -20px;
+        border-radius: 0;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+
+    .carousel.conference .prev:before {
+        width: 6.5px;
+        height: 11px;
+        top: 30px;
+        left: 11px;
+        background-size: 6.5px 11px;
+    }
+
+    .carousel.conference .prev:hover::before {
+        left: 11px;
+        background-size: 6.5px 11px;
+    }
+
+    .carousel.conference .next {
+        width: 35px;
+        height: 70px;
+        top: 15px;
+        right: -20px;
+        border-radius: 0;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+
+    .carousel.conference .next:before {
+        width: 6.5px;
+        height: 11px;
+        top: 30px;
+        right: 11px;
+        background-size: 6.5px 11px;
+    }
+
+    .carousel.conference .next:hover::before {
+        right: 11px;
+        background-size: 6.5px 11px;
+    }
+
+    .carousel.conference .slick-dots {
+        position: absolute;
+        display: block;
+        top: 49px;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        padding: 0;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .carousel.conference .slick-dots > li {
+        width: 5px;
+        height: 5px;
+        margin: 0 7.5px;
+    }
+
+    .carousel.conference .slick-dots > li:before {
+        width: 5px;
+        height: 5px;
+        background-size: 5px 5px;
+        line-height: 5px;
+    }
+}
+
+/* accordion */
+@media screen and (max-width: 750px) {
+    .accordion-close {
+        border-bottom: 0 !important;
+    }
+}
+
+/*  parts  */
+.title {
+    width: 100%;
+    height: 50px;
+    margin: 0 0 30px 0;
+    border: 2px solid #F5F5F5;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.2s;
+}
+
+/*  Arrow button  */
+a.arrow {
+    position: relative;
+    display: inline-block;
+    width: 460px;
+    height: 84px;
+    line-height: 80px;
+    margin-bottom: 16px;
+    border: 2px solid #F5F5F5;
+    border-radius: 42px;
+    font-size: 20px;
+    letter-spacing: 0.72px;
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+a.arrow:hover {
+    color: #FFFFFF;
+    background-color: #E5002D;
+    opacity: 1;
+}
+
+a.arrow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 73px;
+    width: 45px;
+    height: 1px;
+    background: #E5002D;
+    transition: 0.2s;
+}
+
+a.arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 36px;
+    left: 104px;
+    border-top: 1px solid #E5002D;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
+a.arrow:hover::before {
+    background: #ffffff;
+}
+
+a.arrow:hover::after {
+    border-top: 1px solid #ffffff;
+}
+
+/*  Link button  */
+a.btn-link {
+    width: 101px;
+    height: 36px;
+    border: 2px solid #F5F5F5;
+    border-radius: 44px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Roboto Condensed;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 36px;
+    color: #2D2D2D;
+}
+
+a.btn-link:hover {
+    color: #FFFFFF;
+    background-color: #E5002D;
+}
+
+@media screen and (max-width: 750px) {
+    a.btn-link {
+        width: 77px;
+        height: 28px;
+        border: 1px solid #F5F5F5;
+        border-radius: 38.5px;
+        font-size: 10px;
+        letter-spacing: 0.2px;
+        line-height: 28px;
+        background-color: #FFFFFF;
+    }
+}
+
+/* live not-yet */
+a.not-yet {
+    display: inline-block;
+    width: 540px;
+    height: 84px;
+    border-radius: 42px;
+    background-color: #F5F5F5;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 84px;
+    letter-spacing: 0.72px;
+    color: #2D2D2D;
+}
+
+@media screen and (max-width: 750px) {
+    a.not-yet {
+        width: 256px;
+        height: 46px;
+        border-radius: 23px;
+        font-size: 11px;
+        line-height: 46px;
+    }
+}
+
+/* number icon */
+.num {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #DBDBDB;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.num-ss {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    line-height: 25px;
+}
+
+.num-s {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.num-ms {
+    width: 35px;
+    height: 35px;
+    border-radius: 17.5px;
+    line-height: 35px;
+    margin-left: 7.5px;
+    margin-right: 27.5px;
+}
+
+.num-m {
+    width: 40px;
+    height: 40px;
+    background-color: #A7B4B4;
+    border-radius: 20px;
+    line-height: 40px;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.num-l {
+    width: 50px;
+    height: 50px;
+    background-color: #B8B800;
+    border-radius: 25px;
+    line-height: 50px;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.num-l.final {
+    line-height: 60px;
+}
+
+.num-l.final:after {
+    content: 'FINAL';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    position: absolute;
+    line-height: 30px;
+    font-size: 10px;
+    font-weight: normal;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .num {
+        font-size: 12px;
+    }
+
+    .num-s {
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        line-height: 24px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .num-m {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        line-height: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .num-l {
+        width: 40px;
+        height: 40px;
+        background-color: #B8B800;
+        border-radius: 20px;
+        line-height: 40px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .num-l.final {
+        line-height: 50px;
+    }
+
+    .num-l.final:after {
+        content: 'FINAL';
+        width: 40px;
+        height: 40px;
+        line-height: 25px;
+        font-size: 8px;
+        font-weight: normal;
+        letter-spacing: 0.16px;
+        background-color: transparent;
+        opacity: 1;
+    }
+}
+
+.icon-num {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    text-align: center;
+    line-height: 25px;
+    background-color: #DBDBDB;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.gold {
+    background-color: #B8B800;
+}
+
+.silver {
+    background-color: #A7B4B4;
+}
+
+.bronze {
+    background-color: #D7B567;
+}
+
+/* flag icon */
+.flag {
+    display: inline-block;
+    width: 22.5px;
+    height: 15px;
+    margin-right: 16px;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+    background-size: 22.5px 15px;
+}
+
+table tr:nth-of-type(2n+1) td .flag_japan:before {
+    content: '';
+    display: block;
+    width: 22.5px;
+    height: 15px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+}
+
+/* ranking table */
+.ranking {
+    margin-bottom: 50px;
+}
+
+.ranking h2 {
+    margin-bottom: 10px;
+}
+
+.ranking table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+}
+
+.ranking table thead {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.ranking table thead th {
+    position: relative;
+    padding: 11px 0 10px 10px;
+    text-align: left;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 9px;
+    letter-spacing: 0.18px;
+    color: #2D2D2D;
+}
+
+.ranking table thead th:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 6px;
+    right: 0;
+    bottom: 0;
+    background-color: #F5F5F5;
+}
+
+.ranking table thead th:last-of-type::after {
+    display: none;
+}
+
+.ranking table thead th div {
+    text-align: center;
+    padding: 2px 0;
+    margin-left: 4px;
+}
+
+.ranking table thead th div:first-child {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.ranking table tr:nth-of-type(2n) {
+    background-color: #F5F5F5;
+}
+
+.ranking table tr:nth-of-type(2n) td:after {
+    background-color: #FFFFFF;
+}
+
+.ranking table td {
+    position: relative;
+    height: 46px;
+    vertical-align: middle;
+}
+
+.ranking table td:first-of-type::after {
+    display: none;
+}
+
+.ranking table td:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 6px;
+    right: 0;
+    bottom: 0;
+    background-color: #F5F5F5;
+}
+
+.ranking table td:last-of-type::after {
+    display: none;
+}
+
+.ranking table td div {
+    margin-left: 5px;
+}
+
+.ranking table td div:first-child {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+@media screen and (max-width: 750px) {
+    .ranking {
+        margin-bottom: 50px;
+    }
+
+    .ranking h2 {
+        margin-bottom: 10px;
+    }
+
+    .ranking table {
+        margin-left: -20px;
+        margin-right: -20px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 12px;
+    }
+
+    .ranking table thead {
+        border-bottom: 1px solid #F5F5F5;
+    }
+
+    .ranking table thead th {
+        position: relative;
+        padding: 11px 0 10px 10px;
+        text-align: left;
+        font-family: Roboto Condensed;
+        font-weight: bold;
+        font-size: 9px;
+        color: #2D2D2D;
+    }
+
+    .ranking table thead th:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 6px;
+        right: 0;
+        bottom: 0;
+        background-color: #F5F5F5;
+    }
+
+    .ranking table thead th:last-of-type:after {
+        display: none;
+    }
+
+    .ranking table tr:nth-of-type(2n) {
+        background-color: #F5F5F5;
+    }
+
+    .ranking table td {
+        height: 46px;
+        vertical-align: middle;
+    }
+}
+
+/*  common  */
+a, a:visited, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .8;
+}
+
+.en {
+    font-family: Roboto Condensed !important;
+}
+
+.ja {
+    font-family: "Noto Sans JP" !important;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.ml25 {
+    margin-left: 25px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mr25 {
+    margin-right: 25px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.pl25 {
+    padding-left: 25px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.pl15 {
+    padding-left: 15px;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pl5 {
+    padding-left: 5px;
+}
+
+.pr25 {
+    padding-right: 25px;
+}
+
+.pr20 {
+    padding-right: 20px;
+}
+
+.pr15 {
+    padding-right: 15px;
+}
+
+.pr10 {
+    padding-right: 10px;
+}
+
+.pr5 {
+    padding-right: 5px;
+}
+
+.pb25 {
+    padding-bottom: 25px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.pb5 {
+    padding-bottom: 5px;
+}
+
+.tCenter {
+    text-align: center;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .br-pc {
+        display: block;
+    }
+
+    .br-sp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .br-pc {
+        display: none;
+    }
+
+    .br-sp {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    main {
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    main section {
+        margin-bottom: 0;
+    }
+
+    main section h1 {
+        height: 73px;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.64px;
+    }
+
+    main section h1:before, main section h1:after {
+        display: none;
+    }
+
+    main section h1 span {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        height: 73px;
+        text-align: center;
+        line-height: 73px;
+    }
+
+    main section h1.sub {
+        width: 100%;
+        height: 71px;
+        bottom: -2px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        border-bottom: 2px solid #F5F5F5;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    main section h1.sub span {
+        display: block;
+        position: absolute;
+        width: 375px;
+        height: 35px;
+        line-height: 16px;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 36px;
+    }
+
+    main section h1.sub span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        margin-left: 87.5px;
+        width: 200px;
+        height: 2px;
+        background-color: #E5002D;
+    }
+
+    main section .contents {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    main section .col2 .col {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        vertical-align: top;
+    }
+
+    main section .col2 .col:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    main section .col2-deviation .col {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    main section .col2-deviation .col:nth-of-type(2n) {
+        width: 100%;
+    }
+
+    main section .col3 .col {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    main section .col3-2 .col, main section .col2-2 .col {
+        display: inline-block;
+        width: 157px;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    main section .col3-2 .col:nth-of-type(3n), main section .col2-2 .col:nth-of-type(3n) {
+        margin-right: 20px;
+    }
+
+    main section .col3-2 .col:nth-of-type(2n), main section .col2-2 .col:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    main section .recommendation {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    main section .recommendation .col {
+        width: 270px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin-bottom: 66px;
+    }
+
+    main section .recommendation img {
+        width: 250px;
+        height: 166px;
+        margin-bottom: 20px;
+    }
+
+    main section .recommendation .recommendation-text {
+        padding: 0 5px;
+    }
+
+    main section .recommendation .recommendation-text .recommendation-date {
+        height: 10px;
+        margin-bottom: 12px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    main section .recommendation .recommendation-text .recommendation-tag {
+        height: 10px;
+    }
+
+    main section .recommendation .recommendation-text .recommendation-tag a {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    main section .recommendation .recommendation-text p {
+        font-size: 12px;
+        letter-spacing: 0.48px;
+        line-height: 20px;
+    }
+
+    main section .recommendation-btn {
+        margin-top: 0;
+    }
+
+    main section .recommendation-btn a.arrow {
+        width: 260px;
+        height: 50px;
+        font-size: 12px;
+        line-height: 46px;
+        padding-right: 30px;
+        text-align: right;
+        margin-bottom: 40px;
+    }
+
+    main section .recommendation-btn a.arrow::before {
+        width: 23px;
+        top: 25px;
+        left: 28px;
+    }
+
+    main section .recommendation-btn a.arrow::after {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: 39px;
+    }
+
+    main section .recommendation-btn a.arrow span:after {
+        width: 14px;
+        height: 14px;
+        top: 16px;
+        right: 29px;
+        background-size: 14px 14px;
+    }
+
+    main section .sns {
+        position: relative;
+    }
+
+    main section .sns .col3 {
+        width: 100%;
+    }
+
+    main section .sns:before {
+        display: none;
+    }
+
+    main section .sns h2 {
+        position: relative;
+        width: 100%;
+        height: 71px;
+        bottom: -2px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #F5F5F5;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    main section .sns h2 span {
+        display: block;
+        margin-left: calc((100% / 2) - 100px);
+        top: 0;
+        width: 200px;
+        height: 35px;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 36px;
+    }
+
+    main section .sns .sns-area {
+        margin: 0 27px;
+    }
+
+    main section .sns .twitter {
+        margin-bottom: 24px;
+        border: 2px solid #F5F5F5;
+    }
+
+    main section .sns .facebook {
+        margin-bottom: 24px;
+    }
+
+    footer .footer-top {
+        width: 100%;
+        padding: 38px 20px 30px 20px;
+        box-sizing: border-box;
+        background-color: #DBDBDB;
+        text-align: center;
+    }
+
+    footer .footer-top .sponsor {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    footer .footer-top .sponsor .banner {
+        font-size: 0;
+        margin-top: 18px;
+    }
+
+    footer .footer-top .sponsor .banner a {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+        height: 39px;
+    }
+
+    footer .footer-top .sponsor .banner a:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    footer .footer-top .sponsor .banner a img {
+        width: 100%;
+    }
+
+    footer .footer-top .sponsor:last-of-type {
+        margin-bottom: 0;
+    }
+
+    footer .footer-middle {
+        position: relative;
+        width: 100%;
+        padding: 40px 20px 0 20px;
+    }
+
+    footer .footer-middle .footer-middle-l {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 18px;
+        border-right: 0;
+        border-bottom: 1px solid #DBDBDB;
+    }
+
+    footer .footer-middle .footer-middle-l > a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer .footer-middle .footer-middle-l > a img {
+        margin: 0 0 30px 0 !important;
+    }
+
+    footer .footer-middle .footer-middle-l > a:first-child {
+        width: 121px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:first-child img {
+        width: 121px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(2) {
+        display: inline-block;
+        width: 121px;
+        margin-right: 10px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(2) img {
+        width: 121px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(3) {
+        display: inline-block;
+        width: 121px;
+        margin-left: 10px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(3) img {
+        width: 121px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(4) {
+        display: inline-block;
+        width: 121px;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(4) img {
+        width: 70px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(5) {
+        display: inline-block;
+        width: 121px;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(5) img {
+        width: 50px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(6) {
+        width: 210px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(6) img {
+        width: 210px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(7) {
+        display: inline-block;
+        width: 121px;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(7) img {
+        height: 55px;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(8) {
+        display: inline-block;
+        width: 121px;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    footer .footer-middle .footer-middle-l > a:nth-of-type(8) img {
+        height: 55px;
+    }
+
+
+    footer .footer-middle .footer-middle-l p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    footer .footer-middle .footer-middle-l p a:hover {
+        color: #E5002D;
+    }
+
+    footer .footer-middle .footer-middle-r {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    footer .footer-middle .footer-middle-r ul {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    footer .footer-middle .footer-middle-r ul.active {
+        margin-bottom: 38px;
+    }
+
+    footer .footer-middle .footer-middle-r ul.active > li {
+        display: block;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+
+    footer .footer-middle .footer-middle-r ul > li {
+        display: inline-block;
+        width: 157px;
+        margin-bottom: 18px;
+    }
+
+    footer .footer-middle .footer-middle-r .social-site {
+        position: static;
+        width: 315px;
+        height: auto;
+        margin: 0 10px;
+    }
+
+    footer .footer-middle .footer-middle-r .social-site p {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    footer .footer-middle .footer-middle-r .social-site ul {
+        display: block;
+        position: absolute;
+        bottom: 44px;
+        right: 30px;
+        padding: 0;
+    }
+
+    footer .footer-middle .footer-middle-r .social-site ul > li {
+        margin: 0 0 0 20px;
+        width: auto;
+    }
+
+    footer .footer-middle .footer-middle-r .social-site ul > li img {
+        width: auto;
+        height: 30px;
+    }
+
+    footer .footer-middle .btn-top {
+        width: 40px;
+        height: 40px;
+        top: auto;
+        bottom: -40px;
+        z-index: 10;
+    }
+
+    footer .footer-middle .btn-top:hover {
+        background-color: #E5002D;
+    }
+
+    footer .footer-middle .btn-top:before {
+        top: 17px;
+        right: 20px;
+        width: 1px;
+        height: 23px;
+    }
+
+    footer .footer-middle .btn-top:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 19px;
+        right: 16px;
+        border-top: 1px solid #FFFFFF;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    footer .footer-bottom {
+        width: 100%;
+        padding: 40px 30px 40px 30px;
+    }
+
+    footer .footer-bottom .company-info {
+        display: block;
+    }
+
+    footer .footer-bottom .company-info p {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    footer .footer-bottom .company-info ul {
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+    footer .footer-bottom .company-info ul > li {
+        font-size: 10.5px;
+    }
+
+    footer .footer-bottom .copyright {
+        display: block;
+        position: static;
+        font-size: 10px;
+    }
+}
+
+@charset "UTF-8";
+main {
+    background-image: url("../img/icon/time_hover.svg"), url("../img/icon/location_hover.svg"), url("../img/icon/ticket_hover.svg"), url("../img/icon/live_hover.svg"), url("../img/icon/reference_hover.svg"), url("../img/icon/slide-menu_hover.svg"), url("../img/icon/slide-menu_close.svg"), url("../img/icon/arrow_sr_hover.svg"), url("../img/icon/previous_hover.svg"), url("../img/icon/next_hover.svg"), url("../img/icon/live_close.png") url("../img/icon/live_close_hover.png") url("../img/icon/live_close_sp.png") url("../img/icon/live_close_sp_hover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+    margin-bottom: 180px;
+}
+
+.schedule-detail .next-round .conference_title h2 {
+    margin: 0 0 80px 0;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: inherit;
+    letter-spacing: 0.96px;
+    text-align: center;
+    color: #2D2D2D;
+}
+
+.schedule-detail .next-round .conference_title .conference_schedule {
+    text-align: center;
+}
+
+.schedule-detail .next-round .conference_title .conference_schedule p {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    color: #2D2D2D;
+    font-weight: bold;
+}
+
+.schedule-detail .next-round .conference_title .conference_schedule p:last-of-type {
+    font-weight: inherit;
+    margin-right: 0;
+}
+
+.schedule-detail .next-round .conference_info {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.schedule-detail .next-round .conference_info > a,
+.schedule-detail .next-round .conference_info > div {
+    position: relative;
+    display: inline-block;
+    width: 255px;
+    height: 140px;
+    margin: 0;
+    padding-top: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    color: #2D2D2D;
+    border: 2px solid #F5F5F5;
+    border-right: 0;
+    vertical-align: top;
+    transition: 0.2s;
+}
+
+.schedule-detail .next-round .conference_info > a.location,
+.schedule-detail .next-round .conference_info > div.location {
+    padding-top: 75px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.schedule-detail .next-round .conference_info > a.time,
+.schedule-detail .next-round .conference_info > div.time {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.schedule-detail .next-round .conference_info > a.time:after,
+.schedule-detail .next-round .conference_info > div.time:after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 36px;
+    left: 114px;
+    background: url(../img/icon/time.svg);
+    background-size: 22px 22px;
+}
+
+.schedule-detail .next-round .conference_info > a.location:after,
+.schedule-detail .next-round .conference_info > div.location:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    top: 36px;
+    left: 115px;
+    background: url(../img/icon/location.svg);
+    background-size: 20px 25px;
+}
+
+.schedule-detail .next-round .conference_info > a.ticket:after,
+.schedule-detail .next-round .conference_info > div.ticket:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 17px;
+    top: 39px;
+    left: 110px;
+    background: url(../img/icon/ticket.svg);
+    background-size: 30px 17px;
+}
+
+.schedule-detail .next-round .conference_info > a.ticket .sold-out,
+.schedule-detail .next-round .conference_info > div.ticket .sold-out {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-right: 74px solid #E5002D;
+    border-left: 74px solid transparent;
+    border-bottom: 74px solid transparent;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.schedule-detail .next-round .conference_info > a.ticket .sold-out:after,
+.schedule-detail .next-round .conference_info > div.ticket .sold-out:after {
+    content: 'SOLD OUT';
+    position: absolute;
+    top: 20px;
+    left: -4px;
+    width: 100px;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.22px;
+    color: #FFF;
+    transform: rotate(45deg);
+}
+
+.schedule-detail .next-round .conference_info > a.ticket .sold-out:before,
+.schedule-detail .next-round .conference_info > div.ticket .sold-out:before {
+    content: none;
+}
+
+.schedule-detail .next-round .conference_info > a.ticket .coming-soon,
+.schedule-detail .next-round .conference_info > a.ticket .not-on-sale,
+.schedule-detail .next-round .conference_info > a.ticket .on-sale,
+.schedule-detail .next-round .conference_info > div.ticket .coming-soon,
+.schedule-detail .next-round .conference_info > div.ticket .not-on-sale,
+.schedule-detail .next-round .conference_info > div.ticket .on-sale {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-right: 74px solid #E5002D;
+    border-left: 74px solid transparent;
+    border-bottom: 74px solid transparent;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.schedule-detail .next-round .conference_info > a.ticket .on-sale:after,
+.schedule-detail .next-round .conference_info > div.ticket .on-sale:after {
+    content: 'ON SALE !';
+    position: absolute;
+    top: 20px;
+    left: -4px;
+    width: 100px;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.22px;
+    color: #FFF;
+    transform: rotate(45deg);
+}
+
+.schedule-detail .next-round .conference_info > a.ticket .not-on-sale:after,
+.schedule-detail .next-round .conference_info > div.ticket .not-on-sale:after {
+    content: 'NOT FOR SALE !';
+    position: absolute;
+    top: 20px;
+    left: -4px;
+    width: 100px;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.22px;
+    color: #FFF;
+    transform: rotate(45deg);
+}
+
+.schedule-detail .next-round .conference_info > a.ticket .coming-soon:after,
+.schedule-detail .next-round .conference_info > div.ticket .coming-soon:after {
+    content: 'COMING SOON !';
+    position: absolute;
+    top: 20px;
+    left: -4px;
+    width: 100px;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.22px;
+    color: #FFF;
+    transform: rotate(45deg);
+}
+
+
+.schedule-detail .next-round .conference_info > a.ticket .on-sale:before,
+.schedule-detail .next-round .conference_info > div.ticket .on-sale:before {
+    content: none;
+}
+
+.schedule-detail .next-round .conference_info > a.live,
+.schedule-detail .next-round .conference_info > div.live {
+    border-right: 2px solid #F5F5F5;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.schedule-detail .next-round .conference_info > a.live:after,
+.schedule-detail .next-round .conference_info > div.live:after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    top: 38px;
+    left: 111px;
+    background: url(../img/icon/live.svg);
+    background-size: 28px 20px;
+}
+
+.schedule-detail .next-round .conference_info > a {
+    cursor: pointer;
+}
+
+.schedule-detail .next-round .conference_info > a:hover {
+    background-color: #F5F5F5;
+    color: #E5002D;
+    opacity: 1;
+}
+
+.schedule-detail .next-round .conference_info > a:hover.time:after {
+    background: url(../img/icon/time_hover.svg);
+    background-size: 22px 22px;
+}
+
+.schedule-detail .next-round .conference_info > a:hover.location:after {
+    background: url(../img/icon/location_hover.svg);
+    background-size: 20px 25px;
+}
+
+.schedule-detail .next-round .conference_info > a:hover.ticket .on-sale {
+    border-right: 74px solid #FFF;
+}
+
+.schedule-detail .next-round .conference_info > a:hover.ticket .on-sale:after {
+    top: 20px;
+    left: -4px;
+    color: #E5002D;
+}
+
+.schedule-detail .next-round .conference_info > a:hover.ticket .on-sale:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-top: 2px solid #F5F5F5;
+    border-right: 2px solid #F5F5F5;
+}
+
+.schedule-detail .next-round .conference_info > a:hover.ticket:after {
+    background: url(../img/icon/ticket_hover.svg);
+    background-size: 30px 17px;
+}
+
+.schedule-detail .next-round .conference_info > a:hover.live:after {
+    background: url(../img/icon/live_hover.svg);
+    width: 28px;
+    height: 20px;
+    background-size: 28px 20px;
+}
+
+.schedule-detail .next-round .conference_info > div.ticket {
+    background-color: #F5F5F5;
+    color: #b3b3b3;
+}
+
+.schedule-detail .next-round .conference_info > div.ticket:after {
+    background: url(../img/icon/ticket_nosale.svg);
+    background-size: 30px 17px;
+}
+
+.schedule-detail .next-round p {
+    margin: 0 0 58px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #E5002D;
+}
+
+.schedule-detail .next-round a.arrow.sponsor {
+    width: 920px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.schedule-detail .next-round a.arrow.sponsor::before {
+    left: 48px;
+}
+
+.schedule-detail .next-round a.arrow.sponsor::after {
+    left: 79px;
+}
+
+.schedule-detail .next-round a.arrow.sponsor:hover {
+    background-color: #F5F5F5;
+}
+
+.schedule-detail .next-round a.arrow.sponsor:hover::before {
+    background-color: #E5002D;
+}
+
+.schedule-detail .next-round a.arrow.sponsor:hover::after {
+    border-color: #E5002D;
+}
+
+.schedule-detail .next-round a.arrow.sponsor:hover span:first-of-type {
+    color: #E5002D;
+}
+
+.schedule-detail .next-round a.arrow.sponsor:hover span:last-of-type {
+    color: #000000;
+}
+
+.schedule-detail .next-round a.arrow.sponsor:hover span:last-of-type::after {
+    background: url(../img/icon/reference_hover.svg);
+}
+
+.schedule-detail .next-round a.arrow.sponsor span:first-of-type {
+    position: absolute;
+    left: 129px;
+    font-family: Roboto Condensed;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.schedule-detail .next-round a.arrow.sponsor span:last-of-type {
+    position: absolute;
+    right: 105px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.schedule-detail .next-round a.arrow.sponsor span:last-of-type:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 33px;
+    right: -56px;
+    background-size: 18px 18px;
+    background: url(../img/icon/reference.svg);
+}
+
+.schedule-detail .next-round a.arrow.free {
+    width: 580px;
+    height: 84px;
+    margin-bottom: 90px;
+    font-size: 18px;
+}
+
+.schedule-detail .next-round a.arrow.free::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 43px;
+    width: 41px;
+    height: 1px;
+    background: #E5002D;
+}
+
+.schedule-detail .next-round a.arrow.free::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 36px;
+    left: 68px;
+    border-top: 1px solid #E5002D;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.schedule-detail .next-round a.arrow.free:hover::before {
+    background: #ffffff;
+}
+
+.schedule-detail .next-round a.arrow.free:hover::after {
+    border-top: 1px solid #ffffff;
+}
+
+.schedule-detail .next-round .conference_group {
+    text-align: center;
+    border-top: 2px solid #F5F5F5;
+}
+
+.schedule-detail .next-round .conference_group .col {
+    margin-bottom: 20px;
+}
+
+.schedule-detail .next-round .conference_group .group-type {
+    position: relative;
+    width: 100%;
+    height: 108px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #F5F5F5;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    color: #2D2D2D;
+}
+
+.schedule-detail .next-round .conference_group .group-type span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 4px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.schedule-detail .next-round .conference_group .group-team > a,
+.schedule-detail .next-round .conference_group .group-team > div {
+    display: inline-block;
+    width: 130px;
+    height: 140px;
+    margin: 0 30px 0 0;
+    box-sizing: border-box;
+    border: 1px solid #F5F5F5;
+    vertical-align: top;
+    text-align: center;
+    line-height: 140px;
+    transition: 0.2s;
+}
+
+.schedule-detail .next-round .conference_group .group-team > a img,
+.schedule-detail .next-round .conference_group .group-team > div img {
+    display: inline;
+    max-width: 100px;
+    max-height: 100px;
+    vertical-align: middle;
+}
+
+.schedule-detail .next-round .conference_group .group-team > a:hover {
+    border: 1px solid #DBDBDB;
+    opacity: 1;
+}
+
+.schedule-detail .next-round .conference_group .group-team > *:nth-child(3n) {
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.schedule-detail .next-round .conference_group .group-team > *:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-detail .phase > div:last-of-type {
+    border-bottom: 2px solid #F5F5F5 !important;
+}
+
+.schedule-detail .phase .event {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    padding-bottom: 30px;
+}
+
+.schedule-detail .phase .event:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: -2px;
+    background-color: #FFF;
+}
+
+.schedule-detail .phase .event + .event:before {
+    content: none;
+}
+
+.schedule-detail .phase .event .event-time {
+    display: inline-block;
+    position: absolute;
+    width: 188px;
+    line-height: 64px;
+    vertical-align: middle;
+    padding: 0 0 0 70px;
+    font-family: Roboto Condensed;
+    font-weight: normal;
+    letter-spacing: 0.36px;
+    font-size: 18px;
+    background: #2D2D2D;
+    color: #FFF;
+    box-sizing: border-box;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    z-index: 1;
+}
+
+.schedule-detail .phase .event .event-time:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    border: none;
+    border-left: solid 40px transparent;
+    border-bottom: solid 64px #F5F5F5;
+    z-index: 1;
+}
+
+.schedule-detail .phase .event .event-name {
+    display: inline-block;
+    position: absolute;
+    width: 872px;
+    line-height: 64px;
+    margin-left: 148px;
+    background: #F5F5F5;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    font-weight: bold;
+}
+
+.schedule-detail .phase .event .event-participation:after {
+    content: "参加型EVENT";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 85px;
+    height: 23px;
+    line-height: 12px;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #E5002D;
+    font-weight: bold;
+}
+
+.schedule-detail .phase .event + .result {
+    border-bottom: 2px dotted #F5F5F5;
+}
+
+.schedule-detail .phase .event + .result + .result + .result {
+    border-bottom: 2px dotted #F5F5F5;
+}
+
+.schedule-detail .phase .event + .result + .result + .result + .result + .result {
+    border-bottom: 2px dotted #F5F5F5;
+}
+
+.schedule-detail .phase .event + .result + .result + .result + .result + .result + .result + .result {
+    border-bottom: 2px dotted #F5F5F5;
+}
+
+.schedule-detail .phase .event + .result + .result + .result + .result + .result + .result + .result + .result + .result {
+    border-bottom: 2px dotted #F5F5F5;
+}
+
+.schedule-detail .phase .result {
+    width: 100%;
+    height: 64px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #F5F5F5;
+    font-family: Roboto Condensed;
+    font-weight: normal;
+    color: #2D2D2D;
+    font-size: 0;
+}
+
+.schedule-detail .phase .result + .event {
+    margin-top: -30px;
+}
+
+.schedule-detail .phase .result .result-time {
+    display: inline-flex;
+    width: 130px;
+    height: 64px;
+    align-items: center;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.schedule-detail .phase .result .result-team-left {
+    position: relative;
+    display: inline-block;
+    width: 340px;
+    height: 64px;
+    vertical-align: top;
+    text-align: right;
+    font-size: 18px;
+}
+
+.schedule-detail .phase .result .result-team-left a {
+    display: inline-block;
+}
+
+.schedule-detail .phase .result .result-team-left a:hover {
+    opacity: 1;
+}
+
+.schedule-detail .phase .result .result-team-left img {
+    margin: 0 0 0 25px;
+    width: 62px;
+    border: 1px solid #F5F5F5;
+    vertical-align: middle;
+}
+
+.schedule-detail .phase .result .result-team-left span {
+    position: absolute;
+    max-width: 240px;
+    top: -30px;
+    right: 89px;
+    display: inline-flex;
+    vertical-align: middle;
+    height: 124px;
+    line-height: 30px;
+    align-items: center;
+}
+
+.schedule-detail .phase .result .result-team-right {
+    position: relative;
+    display: inline-block;
+    width: 340px;
+    height: 64px;
+    align-items: center;
+    line-height: 64px;
+    font-size: 18px;
+}
+
+.schedule-detail .phase .result .result-team-right a {
+    display: inline-block;
+}
+
+.schedule-detail .phase .result .result-team-right a:hover {
+    opacity: 1;
+}
+
+.schedule-detail .phase .result .result-team-right img {
+    margin: 0 25px 0 10px;
+    width: 62px;
+    border: 1px solid #F5F5F5;
+    vertical-align: middle;
+}
+
+.schedule-detail .phase .result .result-team-right span {
+    position: absolute;
+    max-width: 240px;
+    top: -30px;
+    display: inline-flex;
+    vertical-align: middle;
+    height: 124px;
+    line-height: 30px;
+    align-items: center;
+}
+
+.schedule-detail .phase .result .result-score {
+    display: inline-flex;
+    width: 200px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.schedule-detail .phase .result .result-score span {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark {
+    width: 64px;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark .stats {
+    display: block;
+    width: 64px;
+    height: 30px;
+    margin-bottom: 4px;
+    background-color: #2D2D2D;
+    cursor: pointer;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark .stats:before {
+    display: block;
+    width: 64px;
+    content: "STATS";
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark .stats:hover::before {
+    color: #FFFFFF;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark .stats:hover {
+    background-color: #E5002D;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark .vod {
+    display: block;
+    width: 64px;
+    height: 30px;
+    background-color: #E5002D;
+    cursor: pointer;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark .vod::before {
+    display: block;
+    width: 64px;
+    content: "VOD";
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark .vod:hover::before {
+    color: #E5002D;
+}
+
+.schedule-detail .phase .result .result-score .result-score-mark .vod:hover {
+    background-color: #F5F5F5;
+}
+
+.schedule-detail .annotation {
+    font-size: 14px;
+    color: #2D2D2D;
+}
+
+.schedule-detail .annotation ul {
+    margin: 0;
+    padding: 28px 0 14px 0;
+    list-style: none;
+}
+
+.schedule-detail .annotation ul > li {
+    margin-bottom: 7px;
+}
+
+.schedule-detail .commendation .tCenter {
+    margin-top: 90px;
+}
+
+.schedule-detail .commendation a.arrow {
+    width: 540px;
+    font-size: 18px;
+}
+
+.schedule-detail .commendation a.arrow::before {
+    left: 48px;
+}
+
+.schedule-detail .commendation a.arrow::after {
+    left: 79px;
+}
+
+.schedule-detail .live-vod > img {
+    display: none;
+}
+
+.schedule-detail .live-vod a.arrow {
+    width: 540px;
+    font-size: 18px;
+}
+
+.schedule-detail .live-vod a.arrow::before {
+    left: 48px;
+}
+
+.schedule-detail .live-vod a.arrow::after {
+    left: 79px;
+}
+
+.schedule-detail .live-vod a.arrow:hover {
+    background-color: #F5F5F5;
+}
+
+.schedule-detail .live-vod a.arrow:hover::before {
+    background-color: #E5002D;
+}
+
+.schedule-detail .live-vod a.arrow:hover::after {
+    border-color: #E5002D;
+}
+
+.schedule-detail .live-vod a.arrow:hover span:first-of-type {
+    color: #E5002D;
+}
+
+.schedule-detail .live-vod a.arrow:hover span:first-of-type::after {
+    background: url(../img/icon/reference_hover.svg);
+}
+
+.schedule-detail .live-vod a.arrow span:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 33px;
+    right: 49px;
+    background-size: 18px 18px;
+    background: url(../img/icon/reference.svg);
+}
+
+.schedule-detail .live-vod .oh-container-master {
+    margin: 0 auto;
+    width: 100%;
+    height: 574px;
+    background-color: #F5F5F5;
+}
+
+.schedule-detail .live-vod .oh-container-master .oh-pagin {
+    padding: 0;
+}
+
+.schedule-detail .live-vod .oh-container-master ul.oh-container {
+    padding: 0;
+}
+
+.schedule-detail .live-vod .oh-container-master ul.oh-container li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.schedule-detail .live-vod .oh-container-master ul.oh-container li:first-of-type {
+    height: 574px;
+}
+
+.schedule-detail .live-vod .oh-container-master ul.oh-container li:first-of-type img {
+    width: 100%;
+    height: 574px;
+    object-fit: cover;
+}
+
+.schedule-detail .live-vod .oh_video_type_label,
+.schedule-detail .live-vod .oh-title.oh-title-texton {
+    display: none;
+}
+
+.schedule-detail .live-vod .oh_big_play_button {
+    display: none;
+    width: auto;
+}
+
+.schedule-detail .live-vod .oh_open_iframe::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 1020px;
+    height: 574px;
+    background: url(../img/icon/vod_start.svg);
+    background-size: 120px 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.schedule-detail .live-vod .oh_iframe_parent {
+    z-index: 100000;
+}
+
+.schedule-detail .live-vod .oh_iframe {
+    width: 760px;
+    height: 435px;
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.schedule-detail .live-vod .close_iframe_button {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    visibility: hidden;
+    border: 0;
+}
+
+.schedule-detail .live-vod .close_iframe_button:after {
+    content: '';
+    visibility: visible;
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: calc(50% + 400px);
+    top: calc(50% - 435px / 2);
+    transform: translate(0, 0);
+    background: url(../img/icon/live_close.png);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+}
+
+.schedule-detail .live-vod .close_iframe_button:hover::after {
+    background: url(../img/icon/live_close_hover.png);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+}
+
+.schedule-detail .column-block {
+    margin-bottom: 60px;
+    font-size: 0;
+}
+
+.schedule-detail .column-block.access {
+    margin-bottom: 90px;
+}
+
+.schedule-detail .column-block .left-block {
+    display: inline-block;
+    width: 480px;
+    margin-right: 60px;
+    vertical-align: top;
+}
+
+.schedule-detail .column-block .left-block.commendation {
+    height: 268px;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.schedule-detail .column-block .left-block .commendation-title {
+    width: 480px;
+    height: 62px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 62px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+}
+
+.schedule-detail .column-block .left-block .commendation-icon {
+    display: inline-flex;
+    height: 114px;
+    border: 1px solid #F5F5F5;
+}
+
+.schedule-detail .column-block .left-block .commendation-icon a img {
+    /*margin: 16px;*/
+    width: 114px;
+    height: auto;
+}
+
+.schedule-detail .column-block .left-block .commendation-name {
+    display: inline-block;
+    width: 334px;
+    height: 116px;
+    padding-left: 30px;
+    vertical-align: top;
+    line-height: 116px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.schedule-detail .column-block .left-block .mvp-icon {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.schedule-detail .column-block .left-block .mvp-icon img {
+    width: 116px;
+    height: 146px;
+    object-fit: cover;
+}
+
+.schedule-detail .column-block .left-block .mvp-profile {
+    display: inline-block;
+    width: 334px;
+    vertical-align: top;
+}
+
+.schedule-detail .column-block .left-block .mvp-profile .mvp-number {
+    display: inline-block;
+    width: 49px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-right: 1px solid #F5F5F5;
+    vertical-align: top;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.schedule-detail .column-block .left-block .mvp-profile .mvp-name {
+    display: inline-block;
+    width: 264px;
+    font-size: 20px;
+    color: #2D2D2D;
+}
+
+.schedule-detail .column-block .left-block .mvp-profile .mvp-name span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.schedule-detail .column-block .left-block .mvp-team {
+    display: inline-block;
+}
+
+.schedule-detail .column-block .left-block .mvp-team .mvp-team-icon {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+    border: 1px solid #F5F5F5;
+}
+
+.schedule-detail .column-block .left-block .mvp-team .mvp-team-icon img {
+    margin: 4px;
+    width: 40px;
+    height: auto;
+}
+
+.schedule-detail .column-block .left-block .mvp-team .mvp-team-name {
+    display: inline-block;
+    width: 264px;
+    height: 50px;
+    vertical-align: top;
+    line-height: 50px;
+    font-family: Roboto Condensed;
+    font-weight: normal;
+    font-size: 18px;
+    color: #2D2D2D;
+}
+
+.schedule-detail .column-block .left-block p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.schedule-detail .column-block .left-block p.small {
+    font-size: 14px;
+    margin-bottom: 56px;
+}
+
+.schedule-detail .column-block .left-block .underline {
+    width: 480px;
+    height: 2px;
+    margin-bottom: 60px;
+    background-color: #F5F5F5;
+}
+
+.schedule-detail .column-block .left-block .underline:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: #E5002D;
+}
+
+.schedule-detail .column-block .left-block .underline:after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 466px;
+    width: 14px;
+    height: 2px;
+    background-color: #E5002D;
+}
+
+.schedule-detail .column-block .left-block .access-info {
+    margin-bottom: 24px;
+    line-height: 24px;
+}
+
+.schedule-detail .column-block .left-block .access-info ul {
+    margin-bottom: 23px;
+    padding: 0;
+    list-style: none;
+}
+
+.schedule-detail .column-block .left-block .access-info ul > li {
+    font-size: 14px;
+}
+
+.schedule-detail .column-block .left-block .access-info ul > li:first-of-type {
+    font-weight: bold;
+}
+
+.schedule-detail .column-block .left-block .access-info ul > li a {
+    text-decoration: underline;
+}
+
+.schedule-detail .column-block .right-block {
+    display: inline-block;
+    width: 480px;
+}
+
+.schedule-detail .column-block .right-block img {
+    width: 480px;
+}
+
+.schedule-detail .column-block .right-block img.commendation {
+    height: 270px;
+    object-fit: cover;
+}
+
+.schedule-detail .roster-top {
+    display: block;
+    text-align: center;
+}
+
+.schedule-detail .roster-top img {
+    margin-bottom: 48px;
+    width: 182px;
+    height: 45px;
+}
+
+.schedule-detail .roster-top p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.schedule-detail .roster-top p.small {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: inherit;
+    line-height: 16px;
+}
+
+.schedule-detail .roster-team {
+    width: 303px !important;
+    margin-right: 55px !important;
+}
+
+.schedule-detail .roster-team:nth-of-type(3n) {
+    margin-right: 0 !important;
+}
+
+.schedule-detail .roster-team:nth-of-type(3n+1) {
+    margin-bottom: 58px !important;
+}
+
+.schedule-detail .roster-team .roster-icon {
+    display: inline-flex;
+    width: 300px;
+    height: 208px;
+    margin-bottom: 30px;
+    border: 1px solid #F5F5F5;
+}
+
+.schedule-detail .roster-team .roster-icon img {
+    margin: 14px auto;
+    margin: auto;
+    max-height: 210px;
+}
+
+.schedule-detail .roster-team dl > dt {
+    display: inline-block;
+    width: 50px;
+    font-size: 14px;
+    color: #2D2D2D;
+}
+
+.schedule-detail .roster-team dl > dd {
+    display: inline-block;
+    width: 252px;
+    margin: 0 0 7px 0;
+    text-align: left;
+    font-size: 14px;
+    color: #2D2D2D;
+}
+.schedule-detail .arrow {
+    width: 515px;
+}
+@media screen and (max-width: 750px) {
+    main {
+        margin-bottom: 44px;
+    }
+    .schedule-detail .arrow {
+
+        width: 60%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+    }
+    a.arrow::before, a.arrow::after {
+        display: none !important;
+    }
+    .schedule-detail .next-round .conference_title h2 {
+        margin: 0 0 55px 0;
+        padding-top: 0;
+        font-size: 16px;
+    }
+
+    .schedule-detail .next-round .conference_title .conference_schedule {
+        text-align: center;
+    }
+
+    .schedule-detail .next-round .conference_title .conference_schedule p {
+        margin-right: 20px;
+        margin-bottom: 39px;
+        font-size: 14px;
+    }
+
+    .schedule-detail .next-round .conference_info {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .schedule-detail .next-round .conference_info > a,
+    .schedule-detail .next-round .conference_info > div {
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+        padding: 0 18px 0 0;
+        font-size: 12px;
+        border-right: 2px solid #F5F5F5;
+        border-radius: 8px;
+        line-height: 46px;
+        text-align: right;
+    }
+
+    .schedule-detail .next-round .conference_info > a.location,
+    .schedule-detail .next-round .conference_info > div.location {
+        height: auto;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 13px 18px 13px 57px;
+    }
+
+    .schedule-detail .next-round .conference_info > a.time,
+    .schedule-detail .next-round .conference_info > div.time {
+        border-radius: 8px;
+    }
+
+    .schedule-detail .next-round .conference_info > a.time:after,
+    .schedule-detail .next-round .conference_info > div.time:after {
+        width: 20px;
+        height: 20px;
+        top: 13px;
+        left: 17px;
+        background-size: 20px 20px;
+    }
+
+    .schedule-detail .next-round .conference_info > a.location:after,
+    .schedule-detail .next-round .conference_info > div.location:after {
+        width: 16px;
+        height: 100%;
+        top: 0;
+        left: 19px;
+        background-size: 16px 21px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .schedule-detail .next-round .conference_info > a.ticket:after,
+    .schedule-detail .next-round .conference_info > div.ticket:after {
+        width: 24px;
+        height: 14px;
+        top: 16px;
+        left: 15px;
+        background-size: 24px 14px;
+    }
+    .schedule-detail .next-round .conference_info > a.ticket .coming-soon,
+    .schedule-detail .next-round .conference_info > div.ticket .coming-soon,
+
+    .schedule-detail .next-round .conference_info > a.ticket .not-on-sale,
+    .schedule-detail .next-round .conference_info > div.ticket .not-on-sale,
+
+    .schedule-detail .next-round .conference_info > a.ticket .sold-out,
+    .schedule-detail .next-round .conference_info > div.ticket .sold-out {
+        top: 0;
+        right: 0;
+        border: 0;
+    }
+
+    .schedule-detail .next-round .conference_info > a.ticket .sold-out:after,
+    .schedule-detail .next-round .conference_info > div.ticket .sold-out:after {
+        content: 'SOLD OUT';
+        position: absolute;
+        width: 60px;
+        height: 22px;
+        top: 12px;
+        left: -145px;
+        background-color: #E5002D;
+        text-align: center;
+        font-size: 10px;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+        transform: rotate(0deg);
+    }
+
+    .schedule-detail .next-round .conference_info > a.ticket .coming-soon:after,
+    .schedule-detail .next-round .conference_info > div.ticket .coming-soon:after {
+        content: 'COMING SOON !';
+        position: absolute;
+        width: 80px;
+        height: 22px;
+        top: 12px;
+        left: -145px;
+        background-color: #E5002D;
+        text-align: center;
+        font-size: 10px;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+        transform: rotate(0deg);
+    }
+    .schedule-detail .next-round .conference_info > a.ticket .not-on-sale:after,
+    .schedule-detail .next-round .conference_info > div.ticket .not-on-sale:after {
+        content: 'NOT FOR SALE !';
+        position: absolute;
+        width: 90px;
+        height: 22px;
+        top: 12px;
+        left: -145px;
+        background-color: #E5002D;
+        text-align: center;
+        font-size: 10px;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+        transform: rotate(0deg);
+    }
+
+    .schedule-detail .next-round .conference_info > a.ticket .sold-out:before,
+    .schedule-detail .next-round .conference_info > div.ticket .sold-out:before {
+        content: none;
+    }
+
+    .schedule-detail .next-round .conference_info > a.ticket .on-sale,
+    .schedule-detail .next-round .conference_info > div.ticket .on-sale {
+        top: 0;
+        right: 0;
+        border: 0;
+    }
+
+    .schedule-detail .next-round .conference_info > a.ticket .on-sale:after,
+    .schedule-detail .next-round .conference_info > div.ticket .on-sale:after {
+        content: 'ON SALE !';
+        position: absolute;
+        width: 60px;
+        height: 22px;
+        top: 12px;
+        left: -145px;
+        background-color: #E5002D;
+        text-align: center;
+        font-size: 10px;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+        transform: rotate(0deg);
+    }
+
+    .schedule-detail .next-round .conference_info > a.ticket .on-sale:before,
+    .schedule-detail .next-round .conference_info > div.ticket .on-sale:before {
+        content: none;
+    }
+
+    .schedule-detail .next-round .conference_info > a.live,
+    .schedule-detail .next-round .conference_info > div.live {
+        border-radius: 8px;
+    }
+
+    .schedule-detail .next-round .conference_info > a.live:after,
+    .schedule-detail .next-round .conference_info > div.live:after {
+        width: 22px;
+        height: 16px;
+        top: 15px;
+        left: 16px;
+        background-size: 22px 16px;
+    }
+
+    .schedule-detail .next-round .conference_info > a:hover.time:after,
+    .schedule-detail .next-round .conference_info > div:hover.time:after {
+        background-size: 20px 20px;
+    }
+
+    .schedule-detail .next-round .conference_info > a:hover.location:after,
+    .schedule-detail .next-round .conference_info > div:hover.location:after {
+        background-size: 16px 21px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .schedule-detail .next-round .conference_info > a:hover.ticket:after,
+    .schedule-detail .next-round .conference_info > div:hover.ticket:after {
+        width: 24px;
+        height: 14px;
+        top: 16px;
+        left: 15px;
+        background-size: 24px 14px;
+    }
+
+    .schedule-detail .next-round .conference_info > a:hover.ticket .on-sale,
+    .schedule-detail .next-round .conference_info > div:hover.ticket .on-sale {
+        top: 0;
+        right: 0;
+        border: 0;
+    }
+
+    .schedule-detail .next-round .conference_info > a:hover.ticket .on-sale:after,
+    .schedule-detail .next-round .conference_info > div:hover.ticket .on-sale:after {
+        content: 'ON SALE !';
+        position: absolute;
+        width: 60px;
+        height: 22px;
+        top: 12px;
+        left: -145px;
+        background-color: #FFF;
+        text-align: center;
+        font-size: 10px;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+        transform: rotate(0deg);
+    }
+
+    .schedule-detail .next-round .conference_info > a:hover.ticket .on-sale:before,
+    .schedule-detail .next-round .conference_info > div:hover.ticket .on-sale:before {
+        content: none;
+    }
+
+    .schedule-detail .next-round .conference_info > a:hover.live:after,
+    .schedule-detail .next-round .conference_info > div:hover.live:after {
+        width: 22px;
+        height: 16px;
+        background-size: 22px 16px;
+    }
+
+    .schedule-detail .next-round p {
+        margin: 0 0 40px 0;
+        font-size: 14px;
+    }
+
+    .schedule-detail .next-round a.arrow.sponsor {
+        width: 375px;
+        height: 96px;
+        margin: 0 -20px 0 -20px;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .schedule-detail .next-round a.arrow.sponsor::before {
+        width: 24px;
+        top: 47px;
+        left: 20px;
+    }
+
+    .schedule-detail .next-round a.arrow.sponsor::after {
+        width: 9px;
+        height: 9px;
+        left: 33px;
+        top: 43px;
+    }
+
+    .schedule-detail .next-round a.arrow.sponsor:hover::before {
+        left: 20px;
+    }
+
+    .schedule-detail .next-round a.arrow.sponsor:hover::after {
+        left: 33px;
+    }
+
+    .schedule-detail .next-round a.arrow.sponsor span:first-of-type {
+        left: 63px;
+        line-height: 96px;
+        font-size: 10px;
+    }
+
+    .schedule-detail .next-round a.arrow.sponsor span:last-of-type {
+        right: 50px;
+        line-height: 96px;
+        font-size: 10px;
+    }
+
+    .schedule-detail .next-round a.arrow.sponsor span:last-of-type:after {
+        width: 12px;
+        height: 12px;
+        top: 42px;
+        right: -20px;
+        background-size: 12px 12px;
+    }
+
+    .schedule-detail .next-round a.arrow.free {
+        width: 314px;
+        height: 50px;
+        font-size: 11px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .schedule-detail .next-round a.arrow.free::before {
+        width: 23px;
+        top: 25px;
+        left: 28px;
+    }
+
+    .schedule-detail .next-round a.arrow.free::after {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: 39px;
+    }
+
+    .schedule-detail .next-round a.arrow.free:hover::before {
+        left: 28px;
+    }
+
+    .schedule-detail .next-round a.arrow.free:hover::after {
+        left: 39px;
+    }
+
+    .schedule-detail .next-round .conference_group {
+        border-top: 0;
+    }
+
+    .schedule-detail .next-round .conference_group .col:last-of-type {
+        border: 0;
+        padding-bottom: 41px;
+    }
+
+    .schedule-detail .next-round .conference_group .group-type {
+        width: 100%;
+        height: 75px;
+        margin-bottom: 21px;
+        padding-top: 20px;
+        font-size: 12px;
+    }
+
+    .schedule-detail .next-round .conference_group .group-type span {
+        font-size: 20px;
+    }
+
+    .schedule-detail .next-round .conference_group .group-team > a,
+    .schedule-detail .next-round .conference_group .group-team > div {
+        width: 100px;
+        height: 100px;
+        margin: 0 17px 0px 0;
+        line-height: 98px;
+    }
+
+    .schedule-detail .next-round .conference_group .group-team > a img,
+    .schedule-detail .next-round .conference_group .group-team > div img {
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .schedule-detail .next-round .conference_group .group-team > a:last-of-type,
+    .schedule-detail .next-round .conference_group .group-team > div:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .schedule-detail .next-round .conference_group .group-team > *:nth-child(3n) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .schedule-detail .next-round .conference_group .group-team > *:last-child {
+        margin-bottom: 0;
+    }
+
+    .schedule-detail .phase .event {
+        margin-top: 20px;
+        padding-bottom: 0;
+        height: 50px;
+    }
+
+    .schedule-detail .phase .event:before {
+        content: none;
+    }
+
+    .schedule-detail .phase .event .event-time {
+        width: 102px;
+        height: 50px;
+        margin-left: -20px;
+        padding: 0 0 0 20px;
+        font-size: 12px;
+        border-radius: 0;
+        line-height: 50px;
+    }
+
+    .schedule-detail .phase .event .event-time:after {
+        border-left: solid 30px transparent;
+        border-bottom: solid 50px #F5F5F5;
+    }
+
+    .schedule-detail .phase .event .event-name {
+        width: 273px;
+        line-height: 50px;
+        margin-left: 82px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        color: #2d2d2d;
+        border-radius: 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .schedule-detail .phase .event .event-name.event-participation {
+        width: 223px;
+    }
+
+    .schedule-detail .phase .event .event-participation:before {
+        content: "参加型";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: -50px;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding-top: 15px;
+        box-sizing: border-box;
+        background-color: #E5002D;
+        font-size: 10px;
+        letter-spacing: 0.32px;
+        color: #FFFFFF;
+        font-weight: bold;
+        line-height: 10px;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .schedule-detail .phase .event .event-participation:after {
+        content: "EVENT";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: -50px;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding-top: 28px;
+        box-sizing: border-box;
+        background-color: transparent;
+        font-size: 8px;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        font-weight: bold;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .schedule-detail .phase .event + .result:after {
+        bottom: -49px;
+    }
+
+    .schedule-detail .phase .event + .result + .result + .result:after {
+        bottom: -49px;
+    }
+
+    .schedule-detail .phase .event + .result + .result + .result + .result + .result:after {
+        bottom: -49px;
+    }
+
+    .schedule-detail .phase .event + .result + .result + .result + .result + .result + .result + .result:after {
+        bottom: -49px;
+    }
+
+    .schedule-detail .phase .event + .result + .result + .result + .result + .result + .result + .result + .result + .result:after {
+        bottom: -49px;
+    }
+
+    .schedule-detail .phase .result {
+        margin-bottom: 0;
+        height: 167px;
+        padding: 0;
+    }
+
+    .schedule-detail .phase .result + .event {
+        margin-top: -2px;
+    }
+
+    .schedule-detail .phase .result.undecided {
+        height: 80px;
+        border-bottom: 2px dotted #F5F5F5;
+    }
+
+    .schedule-detail .phase .result.undecided .result-team-left span,
+    .schedule-detail .phase .result.undecided .result-team-right span {
+        bottom: 45px;
+    }
+
+    .schedule-detail .phase .result .result-time {
+        display: block;
+        position: relative;
+        padding: 0 !important;
+        width: 95%;
+        height: 54px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+
+    .schedule-detail .phase .result .result-time span {
+        display: block;
+        position: absolute;
+        bottom: 22px;
+        font-size: 12px;
+    }
+
+    .schedule-detail .phase .result .result-time .num {
+        position: absolute;
+        margin-right: 0 !important;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .schedule-detail .phase .result .result-team-left {
+        position: relative;
+        width: 64px;
+        height: 64px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .schedule-detail .phase .result .result-team-left a {
+        display: inline-block;
+        width: 62px;
+        height: 62px;
+        text-align: center;
+        vertical-align: inherit;
+    }
+
+    .schedule-detail .phase .result .result-team-left a img {
+        margin: 0;
+        width: 60px;
+        height: 60px;
+        vertical-align: middle;
+    }
+
+    .schedule-detail .phase .result .result-team-left span {
+        display: flex;
+        position: absolute;
+        width: 150px;
+        height: 32px;
+        align-items: center;
+        top: initial;
+        left: 0;
+        right: initial;
+        bottom: -40px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.24px;
+        color: #2D2D2D;
+    }
+
+    .schedule-detail .phase .result .result-team-right {
+        position: relative;
+        width: 64px;
+        height: 64px;
+        text-align: right;
+        line-height: inherit;
+    }
+
+    .schedule-detail .phase .result .result-team-right a {
+        display: inline-block;
+        width: 62px;
+        height: 62px;
+        text-align: center;
+        vertical-align: inherit;
+    }
+
+    .schedule-detail .phase .result .result-team-right a img {
+        margin: 0;
+        width: 60px;
+        height: 60px;
+        vertical-align: middle;
+    }
+
+    .schedule-detail .phase .result .result-team-right span {
+        display: flex;
+        position: absolute;
+        width: 150px;
+        height: 32px;
+        top: initial;
+        right: 0;
+        bottom: -40px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.24px;
+        justify-content: flex-end;
+        align-items: center;
+        color: #2D2D2D;
+    }
+
+    .schedule-detail .phase .result .result-score {
+        display: inline-flex;
+        width: 185px;
+        height: 64px;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        font-size: 18px;
+    }
+
+    .schedule-detail .phase .result .result-score span {
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0 28px;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark {
+        width: 64px;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark .stats {
+        display: block;
+        width: 64px;
+        height: 30px;
+        margin-bottom: 4px;
+        background-color: #2D2D2D;
+        cursor: pointer;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark .stats:before {
+        display: block;
+        width: 64px;
+        content: "STATS";
+        color: #FFF;
+        font-family: Roboto Condensed;
+        font-size: 12px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark .stats:hover::before {
+        color: #FFFFFF;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark .stats:hover {
+        background-color: #E5002D;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark .vod {
+        display: block;
+        width: 64px;
+        height: 30px;
+        background-color: #E5002D;
+        cursor: pointer;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark .vod::before {
+        display: block;
+        width: 64px;
+        content: "VOD";
+        color: #FFF;
+        font-family: Roboto Condensed;
+        font-size: 12px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark .vod:hover::before {
+        color: #E5002D;
+    }
+
+    .schedule-detail .phase .result .result-score .result-score-mark .vod:hover {
+        background-color: #F5F5F5;
+    }
+
+    .schedule-detail .annotation {
+        font-size: 10px;
+        letter-spacing: 0.4px;
+        color: #2D2D2D;
+    }
+
+    .schedule-detail .annotation ul {
+        margin: 20px 0 40px 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .schedule-detail .annotation ul > li {
+        margin-bottom: 7px;
+    }
+
+    .schedule-detail .roster img {
+        margin-left: -20px;
+        width: 375px;
+    }
+
+    .schedule-detail .roster-top {
+        display: block;
+        text-align: center;
+    }
+
+    .schedule-detail .roster-top img {
+        width: 121px;
+        height: 30px;
+        margin-bottom: 24px;
+    }
+
+    .schedule-detail .roster-top p {
+        font-size: 16px;
+        line-height: 44px;
+        color: #2D2D2D;
+    }
+
+    .schedule-detail .roster-top p.small {
+        margin-bottom: 45px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .schedule-detail .roster-team {
+        width: 157px !important;
+        margin-right: 20px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .schedule-detail .roster-team:nth-of-type(3n) {
+        margin-right: 20px !important;
+    }
+
+    .schedule-detail .roster-team:nth-of-type(2n) {
+        margin-right: 0px !important;
+    }
+
+    .schedule-detail .roster-team:nth-of-type(3n+1) {
+        margin-bottom: 15px !important;
+    }
+
+    .schedule-detail .roster-team:last-of-type {
+        margin-bottom: 46px;
+    }
+
+    .schedule-detail .roster-team .roster-icon {
+        width: 100%;
+        height: 95px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .schedule-detail .roster-team .roster-icon img {
+        margin: auto;
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .schedule-detail .roster-team dl > dt {
+        width: 36px;
+        font-size: 12px;
+    }
+
+    .schedule-detail .roster-team dl > dd {
+        width: 121px;
+        font-size: 12px;
+    }
+
+    .schedule-detail .column-block.access {
+        position: relative;
+        margin-bottom: 6px;
+    }
+
+    .schedule-detail .column-block.access .right-block {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .schedule-detail .column-block.access .right-block img {
+        position: absolute;
+        width: calc(100% + 40px);
+        top: 68px;
+        left: -20px;
+    }
+
+    .schedule-detail .column-block.access .right-block img.commendation {
+        height: 270px;
+    }
+
+    .schedule-detail .column-block.access .right-block img.access {
+        height: 250px;
+    }
+
+    .schedule-detail .column-block .left-block {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .schedule-detail .column-block .left-block.commendation {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    .schedule-detail .column-block .left-block .commendation-title {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 12px;
+        color: #2D2D2D;
+    }
+
+    .schedule-detail .column-block .left-block .commendation-icon {
+        display: inline-flex;
+        width: 62px;
+        height: 62px;
+        border: 1px solid #F5F5F5;
+    }
+
+    .schedule-detail .column-block .left-block .commendation-icon a img {
+        margin: auto 4px;
+        width: 54px;
+        height: auto;
+    }
+
+    .schedule-detail .column-block .left-block .commendation-name {
+        width: 271px;
+        height: 64px;
+        box-sizing: border-box;
+        padding-left: 30px;
+        vertical-align: top;
+        line-height: 64px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2D2D2D;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-icon {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-icon img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-profile {
+        display: inline-block;
+        width: 189px;
+        vertical-align: top;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-profile .mvp-number {
+        display: inline-block;
+        width: 49px;
+        height: 30px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-right: 1px solid #F5F5F5;
+        vertical-align: top;
+        font-family: Roboto Condensed;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-profile .mvp-name {
+        display: inline-block;
+        width: 119px;
+        font-size: 12px;
+        color: #2D2D2D;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-profile .mvp-name span {
+        display: block;
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-team {
+        display: inline-block;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-team .mvp-team-icon {
+        display: inline-flex;
+        width: 48px;
+        height: 48px;
+        margin-right: 20px;
+        border: 1px solid #F5F5F5;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-team .mvp-team-icon img {
+        margin: auto 4px;
+        width: 40px;
+        height: auto;
+    }
+
+    .schedule-detail .column-block .left-block .mvp-team .mvp-team-name {
+        display: inline-block;
+        width: 119px;
+        height: 50px;
+        vertical-align: top;
+        line-height: 50px;
+        font-size: 14px;
+        color: #2D2D2D;
+    }
+
+    .schedule-detail .column-block .left-block p {
+        color: #2d2d2d;
+        font-size: 14px;
+        margin: 0 0 12px 0;
+    }
+
+    .schedule-detail .column-block .left-block p.small {
+        font-size: 12px;
+    }
+
+    .schedule-detail .column-block .left-block .underline {
+        display: none;
+    }
+
+    .schedule-detail .column-block .left-block .access-info {
+        margin-bottom: 24px;
+        line-height: 24px;
+    }
+
+    .schedule-detail .column-block .left-block .access-info ul {
+        margin-bottom: 30px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .schedule-detail .column-block .left-block .access-info ul > li {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .schedule-detail .column-block .left-block .access-info ul > li:first-of-type {
+        font-weight: bold;
+    }
+
+    .schedule-detail .access iframe {
+        margin-left: -20px;
+        margin-bottom: 41px;
+    }
+
+    .schedule-detail .commendation {
+        padding-bottom: 20px;
+    }
+
+    .schedule-detail .commendation .tCenter {
+        margin-top: 40px;
+    }
+
+    .schedule-detail .commendation > .column-block {
+        margin-bottom: 40px;
+    }
+
+    .schedule-detail .commendation .right-block {
+        width: 100%;
+        height: 188px;
+    }
+
+    .schedule-detail .commendation .right-block img {
+        width: 100%;
+        height: 188px;
+        top: 68px;
+    }
+
+    .schedule-detail .commendation a.arrow {
+        width: 260px;
+        height: 50px;
+        font-size: 11px;
+        line-height: 46px;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .schedule-detail .commendation a.arrow::before {
+        width: 23px;
+        top: 23px;
+        left: 28px;
+    }
+
+    .schedule-detail .commendation a.arrow::after {
+        width: 7px;
+        height: 7px;
+        top: 19px;
+        left: 42px;
+    }
+
+    .schedule-detail .commendation a.arrow:hover::before {
+        left: 28px;
+    }
+
+    .schedule-detail .commendation a.arrow:hover::after {
+        left: 42px;
+    }
+
+    .schedule-detail .live-vod a.arrow {
+        width: 260px;
+        height: 50px;
+        font-size: 11px;
+        line-height: 50px;
+    }
+
+    .schedule-detail .live-vod a.arrow::before {
+        width: 23px;
+        top: 25px;
+        left: 28px;
+    }
+
+    .schedule-detail .live-vod a.arrow::after {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: 39px;
+    }
+
+    .schedule-detail .live-vod a.arrow:hover::before {
+        left: 28px;
+    }
+
+    .schedule-detail .live-vod a.arrow:hover::after {
+        left: 39px;
+    }
+
+    .schedule-detail .live-vod a.arrow span:after {
+        width: 14px;
+        height: 14px;
+        top: 16px;
+        right: 29px;
+        background-size: 14px 14px;
+    }
+
+    .schedule-detail .live-vod .oh-container-master {
+        margin: 0 -20px;
+        width: 375px;
+        height: 250px;
+    }
+
+    .schedule-detail .live-vod .oh-container-master ul.oh-container li {
+        width: 100%;
+    }
+
+    .schedule-detail .live-vod .oh-container-master ul.oh-container li:first-of-type {
+        height: 250px;
+    }
+
+    .schedule-detail .live-vod .oh-container-master ul.oh-container li:first-of-type img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .schedule-detail .live-vod .oh_iframe_parent {
+        top: 0;
+    }
+
+    .schedule-detail .live-vod .oh_iframe {
+        width: 100%;
+        height: 248px;
+        margin-top: 125px;
+        padding-top: initial;
+        position: initial;
+        left: initial;
+        transform: initial;
+    }
+
+    .schedule-detail .live-vod .oh_open_iframe::after {
+        width: 375px;
+        height: 250px;
+        background-size: 60px 60px;
+    }
+
+    .schedule-detail .live-vod .close_iframe_button {
+        top: 125px;
+    }
+
+    .schedule-detail .live-vod .close_iframe_button:after {
+        width: 37.5px;
+        height: 37.5px;
+        left: initial;
+        right: 0;
+        top: 0;
+        transform: translate(0, 0);
+        background: url(../img/icon/live_close_sp.png);
+        background-size: 37.5px 37.5px;
+    }
+
+    .schedule-detail .live-vod .close_iframe_button:hover::after {
+        background: url(../img/icon/live_close_sp_hover.png);
+        background-size: 37.5px 37.5px;
+    }
+}
+
+@media screen and (max-width: 750px) and (orientation: landscape) {
+    .schedule-detail .live-vod .oh_iframe {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .schedule-detail .live-vod .close_iframe_button {
+        top: 0;
+    }
+}

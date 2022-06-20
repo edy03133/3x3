@@ -1,0 +1,348 @@
+main {
+  margin-bottom: 120px;
+}
+
+.gallery h1 {
+  margin-bottom: 60px;
+}
+
+.gallery a.arrow {
+  width: 580px;
+  height: 84px;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+.gallery a.arrow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 42px;
+  left: 43px;
+  width: 41px;
+  height: 1px;
+  background: #E5002D;
+}
+
+.gallery a.arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 36px;
+  left: 68px;
+  border-top: 1px solid #E5002D;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.gallery a.arrow:hover::before {
+  background: #ffffff;
+}
+
+.gallery a.arrow:hover::after {
+  border-top: 1px solid #ffffff;
+}
+
+.gallery .select-area .country {
+  margin-bottom: 30px;
+}
+
+.gallery .select-area .country a {
+  display: inline-block;
+  width: 252px;
+  height: 64px;
+  margin-left: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2D2D2D;
+  text-decoration: none;
+  line-height: 64px;
+  text-align: center;
+  background-color: #F5F5F5;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.gallery .select-area .country a:first-of-type {
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  margin-left: 0;
+}
+
+.gallery .select-area .country a:last-of-type {
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.gallery .select-area .country a.active, .gallery .select-area .country a:hover {
+  color: #FFFFFF;
+  background-color: #2D2D2D;
+  opacity: 1;
+}
+
+.gallery .select-area .month {
+  padding-bottom: 59px;
+  border-bottom: 1px solid #F5F5F5;
+  text-align: center;
+}
+
+.gallery .select-area .month a {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-left: 114px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  border-radius: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2D2D2D;
+  text-decoration: none;
+  text-align: center;
+  background-color: #F5F5F5;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.gallery .select-area .month a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 61px;
+  left: 37px;
+  border-top: 1px solid #E5002D;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.gallery .select-area .month a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 61px;
+  right: 37px;
+  border-top: 1px solid #E5002D;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.gallery .select-area .month a:first-of-type {
+  margin-left: 0;
+}
+
+.gallery .select-area .month a.active, .gallery .select-area .month a:hover {
+  color: #FFFFFF;
+  background-color: #E5002D;
+  opacity: 1;
+}
+
+.gallery .select-area .month a.active::before, .gallery .select-area .month a.active::after, .gallery .select-area .month a:hover::before, .gallery .select-area .month a:hover::after {
+  border-color: #FFFFFF;
+}
+
+.gallery .result-area .result {
+  display: none;
+}
+
+.gallery .result-area .result:first-of-type {
+  display: block;
+}
+
+.gallery .result-area .result .game {
+  padding: 60px 0;
+}
+
+.gallery .result-area .result .game a {
+  display: inline-block;
+  width: 240px;
+  height: 54px;
+  box-sizing: border-box;
+  border-radius: 27px;
+  border: 1px solid #F5F5F5;
+  margin-right: 20px;
+  font-size: 12px;
+  line-height: 52px;
+  text-align: center;
+  font-weight: bold;
+  color: #2D2D2D;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.gallery .result-area .result .game a:nth-of-type(4n) {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.gallery .result-area .result .game a.active, .gallery .result-area .result .game a:hover {
+  color: #FFFFFF;
+  background-color: #E5002D;
+  opacity: 1;
+}
+
+.gallery .result-area .result .game a.active::before, .gallery .result-area .result .game a.active::after, .gallery .result-area .result .game a:hover::before, .gallery .result-area .result .game a:hover::after {
+  border-color: #FFFFFF;
+}
+
+.gallery .result-area .result .result-img {
+  display: none;
+  margin-bottom: 80px;
+}
+
+.gallery .result-area .result .result-img:nth-of-type(2) {
+  display: block;
+}
+
+.gallery .result-area .result .result-img a {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery .result-area .result .result-img a:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.gallery .result-area .result .result-img a img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin-bottom: 50px;
+  }
+  .gallery h1 {
+    margin-bottom: 40px;
+  }
+  .gallery a.arrow {
+    width: 314px;
+    height: 50px;
+    font-size: 11px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+  .gallery a.arrow::before {
+    width: 23px;
+    top: 25px;
+    left: 28px;
+  }
+  .gallery a.arrow::after {
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: 39px;
+  }
+  .gallery .select-area .country {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+  }
+  .gallery .select-area .country a {
+    width: 185px;
+    height: 54px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    font-weight: bold;
+    color: #2D2D2D;
+    line-height: 54px;
+    text-align: center;
+  }
+  .gallery .select-area .country a:first-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+  }
+  .gallery .select-area .country a:nth-of-type(3) {
+    margin-left: 0;
+  }
+  .gallery .select-area .country a:last-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .gallery .select-area .country a.active, .gallery .select-area .country a:hover {
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+  }
+  .gallery .select-area .month {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .gallery .select-area .month a {
+    width: 57px;
+    height: 57px;
+    margin-left: 15px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    border-radius: 28.5px;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+  }
+  .gallery .select-area .month a::before {
+    top: 40px;
+    left: 21px;
+  }
+  .gallery .select-area .month a::after {
+    top: 40px;
+    right: 20px;
+  }
+  .gallery .select-area .month a:first-of-type {
+    margin-left: 0;
+  }
+  .gallery .result-area .result .game {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .gallery .result-area .result .game a {
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #F5F5F5;
+    margin-right: 5px;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    line-height: 38px;
+  }
+  .gallery .result-area .result .game a:nth-of-type(4n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .gallery .result-area .result .game a:nth-of-type(2n) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .gallery .result-area .result .game a.active, .gallery .result-area .result .game a:hover {
+    color: #FFFFFF;
+    background-color: #E5002D;
+    opacity: 1;
+  }
+  .gallery .result-area .result .game a.active::before, .gallery .result-area .result .game a.active::after, .gallery .result-area .result .game a:hover::before, .gallery .result-area .result .game a:hover::after {
+    border-color: #FFFFFF;
+  }
+  .gallery .result-area .result .result-img a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .gallery .result-area .result .result-img a:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .gallery .result-area .result .result-img a img {
+    width: 157px;
+    height: 105px;
+    object-fit: cover;
+  }
+}

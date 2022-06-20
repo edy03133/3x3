@@ -1,0 +1,17 @@
+main.stats-main li {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+main {
+  margin-bottom: 180px;
+}
+
+.breadcrumb {
+  margin-bottom: 0 !important;
+}
+
+.share-btn-area {
+  font-size: 0;
+}
